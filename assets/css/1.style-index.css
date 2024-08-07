@@ -1,0 +1,24 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-info a,
+.social-links a {
+    color: #0066cc;
+    text-decoration: none;
+}
+.contact-info a:hover,
+.social-links a:hover {
+    text-decoration: underline;
+}
