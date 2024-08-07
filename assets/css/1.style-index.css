@@ -19,7 +19,7 @@ body {
     text-decoration: none;
 }
 .social-links img {
-    max-width: 6vh;
+    max-width: 30px;
 }
 .contact-info a:hover,
 .social-links a:hover {
