@@ -1,0 +1,32 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilização do elemento pai */
+.container{
+    width: 80%;  /* 80% da largura da tela */
+    height: 50vh; /* 50% da altura da tela */
+    margin: 50px auto; /* Centraliza horizontalmente */
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Estilização do elemento filho */
+.box {
+    width: 50%; /* 50% da largura do pai */
+    height: 30%; /* 30% da altura do pai */
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
