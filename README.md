@@ -14,7 +14,7 @@ Atualmente, foco em projetos Full Stack para fortalecer meu portfólio e contrib
 - **Front-end:** HTML5, CSS3, Bootstrap  
 - **Back-end:** PHP, MySQL  
 - **Controle de Versão:** Git, GitHub  
-- **Ferramentas:** VS Code, Figma, Trello  
+- **Ferramentas:** VS Code, Figma, Trello, Canva  
 - **Metodologias:** Scrum, Kanban  
 
 ---
