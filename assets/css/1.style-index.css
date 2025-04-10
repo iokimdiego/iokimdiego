@@ -2,17 +2,108 @@ body {
     background-color: #f0f0f0;
     height: 100vh;
     margin: 0;
+    /* font-family: 'Poppins', sans-serif; */
 }
 .container {
     background: #fff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
+
+.titulo-principal {
+    font-family: 'Poppins', sans-serif;
+    /* color: #26272A; */
+}
+
+/* Estilização de Cores */
+.destaque-azul {
+    color: #2890EF;
+}
+.azul-escuro {
+    color: #263238;
+}
+
 
 /* Inínio da Estilização do header */
 
 /* Estilização do ícone de e-mail do header */
-.icone-azul {
-    color: #2890EF;
+
+.banner {
 }
+
+.btn-padrao {
+    background-color: #2890EF;
+}
+
+.foto-web-developer{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.foto-web-developer img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.stack1, .stack2, .stack3, .stack4, .stack5,
+.stack6, .stack7, .stack8, .stack9 {
+  background-color: #2890EF;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  border-radius: 50%;
+  position: absolute; 
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+}
+
+.stack1 {
+    top: 10%;
+    left: 15%;
+  }
+  
+  .stack2 {
+    top: 25%;
+    right: 20%;
+  }
+  
+  .stack3 {
+    bottom: 15%;
+    left: 30%;
+  }
+  
+  .stack4 {
+    bottom: 30%;
+    right: 6%;
+  }
+  
+  .stack5 {
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%); /* Centraliza a div */
+  }
+  
+  .stack6 {
+    top: 15%;
+    right: 5%;
+  }
+  
+  .stack7 {
+    bottom: 5%;
+    left: 10%;
+  }
+  
+  .stack8 {
+    top: 70%;
+    right: 35%;
+  }
+  
+  .stack9 {
+    bottom: 40%;
+    left: 65%;
+  }
