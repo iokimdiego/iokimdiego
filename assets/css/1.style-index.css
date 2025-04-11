@@ -27,6 +27,14 @@ body {
 
 /* Inínio da Estilização do header */
 
+header .container{
+  position: relative;
+}
+
+.link-email {
+  z-index: 2;
+}
+
 /* Estilização do ícone de e-mail do header */
 
 .banner {
@@ -46,64 +54,83 @@ body {
     width: 100%;
     display: block;
     height: auto;
+    position: absolute;
+    z-index: 3;
 }
 
 .stack1, .stack2, .stack3, .stack4, .stack5,
 .stack6, .stack7, .stack8, .stack9 {
-  background-color: #2890EF;
   width: 32px;
   height: 32px;
   display: flex;
   border-radius: 50%;
-  position: absolute; 
+  position: absolute;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 16px;
+  z-index: 2;
 }
 
 .stack1 {
     top: 10%;
-    left: 15%;
+    left: 9%; 
   }
-  
+
   .stack2 {
-    top: 25%;
-    right: 20%;
+    top: 1%;
+    right: 50%;
   }
-  
+
   .stack3 {
-    bottom: 15%;
+    top: 15%;
     left: 30%;
   }
-  
+
   .stack4 {
     bottom: 30%;
     right: 6%;
   }
-  
+
   .stack5 {
+    width: 64px;
+    height: 64px;
     top: 50%;
     left: 25%;
     transform: translate(-50%, -50%); /* Centraliza a div */
   }
-  
+
   .stack6 {
     top: 15%;
     right: 5%;
   }
-  
+
   .stack7 {
-    bottom: 5%;
-    left: 10%;
+    bottom: 18%;
+    left: 5%;
   }
-  
+
   .stack8 {
-    top: 70%;
-    right: 35%;
+    top: 60%;
+    right: 60%;
+    color: #263238;
   }
-  
+
   .stack9 {
-    bottom: 40%;
-    left: 65%;
+    width: 64px;
+    height: 64px;
+    top: 18%;
+    left: 70%;
+  }
+
+  .caixa-azul-banner{
+    background-color: #EDF6FF;
+    width: 345px;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+
   }
