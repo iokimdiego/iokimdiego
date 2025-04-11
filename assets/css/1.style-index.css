@@ -134,3 +134,17 @@ header .container{
     right: 0;
 
   }
+
+  .stacks-brands {
+    color: #AFB7C2;
+    font-size: 16px;
+  }
+
+  .stacks-brands i {
+    font-size: 52px;
+    padding-right: 4px;
+  }
+  .stacks-brands span {
+    padding-right: 8px;
+    text-align: left;
+  }
