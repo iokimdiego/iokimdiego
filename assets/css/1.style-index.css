@@ -6,6 +6,7 @@
   3 - Estilizaçao do Header
       3.1 - Estilização do ícone de e-mail do header
   4 - Estilização do banner principal
+  5 - Estilização da seção Stacks
 
 */
 
@@ -65,8 +66,6 @@ header .container{
     padding: 0;
     position: relative;
     overflow: hidden;
-    /* width: 100%;
-    height: auto; */
 }
 
 .foto-web-developer img {
@@ -163,17 +162,6 @@ header .container{
     right: 0;
 
   }
-  /* .caixa-azul-banner{
-    background-color: #EDF6FF;
-    width: 345px;
-    height: 100%;
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-
-  } */
 
   /* Media query para telas menores (celulares) */
 @media (max-width: 768px) {
@@ -196,11 +184,11 @@ header .container{
       font-size: 14px;
       margin: 5px;
   }
-
+  
   .stack5, .stack9 {
-      width: 50px;
-      height: 50px;
-      font-size: 16px;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
   }
 
   .caixa-azul-banner {
@@ -209,33 +197,71 @@ header .container{
       height: auto;
       /* Outros ajustes para a caixa azul no layout de celular */
   }
-
+  
   .col-6:first-child {
-      /* Ajustes para a coluna de texto no celular */
-      order: 2; /* Coloca a coluna de texto abaixo da imagem */
-      text-align: center;
+    /* Ajustes para a coluna de texto no celular */
+    order: 2; /* Coloca a coluna de texto abaixo da imagem */
+    text-align: center;
   }
-
+  
   .col-6:last-child {
-      /* Ajustes para a coluna da imagem no celular */
-      order: 1; /* Coloca a coluna da imagem acima da coluna de texto */
+    /* Ajustes para a coluna da imagem no celular */
+    order: 1; /* Coloca a coluna da imagem acima da coluna de texto */
   }
-
+  
   .banner .row {
-      flex-direction: column-reverse; /* Inverte a ordem das colunas */
+    flex-direction: column-reverse; /* Inverte a ordem das colunas */
   }
 }
+
+/* 5 - Estilização da seção Stacks */
 
   .stacks-brands {
     color: #AFB7C2;
     font-size: 16px;
-  }
+    display: flex; /* Ativa o Flexbox para os filhos diretos */
+    justify-content: space-between; /* Distribui o espaço igualmente entre os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro (opcional) */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+}
 
+.stacks-brands > div {
+  display: flex; /* Garante que ícone e span fiquem lado a lado */
+  align-items: center; /* Alinha ícone e span verticalmente */
+  text-align: left; /* Alinha o texto do span à esquerda */
+  margin-bottom: 15px; /* Adiciona um pouco de espaço abaixo de cada dupla (para quando quebrarem) */
+  flex-grow: 1; /* Faz com que cada div ocupe o mesmo espaço disponível */
+  flex-basis: calc(14.28% - 10px); /* Define uma largura base para cada item (100% / 7 itens) - margem */
+  max-width: calc(14.28% - 10px); /* Define uma largura máxima para evitar que cresçam demais */
+  padding: 5px; /* Adiciona um pouco de espaçamento interno */
+}
+  
   .stacks-brands i {
     font-size: 52px;
     padding-right: 4px;
   }
   .stacks-brands span {
+    padding-right: 4px;
+    font-size: 13px;
+    padding-left: 3px;
     padding-right: 8px;
-    text-align: left;
   }
+
+/* Media query para telas menores*/
+@media (max-width: 768px) {
+  .stacks-brands {
+      justify-content: space-around; /* Distribui o espaço com um pouco mais de folga nas laterais */
+  }
+
+  .stacks-brands > div {
+      flex-basis: calc(50% - 10px); /* Dois itens por linha em telas menores */
+      max-width: calc(50% - 10px);
+      margin-bottom: 20px;
+  }
+
+  .stacks-brands > div.col-2 {
+      flex-basis: calc(100% - 10px); /* Ocupa a largura total em telas menores */
+      max-width: calc(100% - 10px);
+      justify-content: center;
+  }
+}
