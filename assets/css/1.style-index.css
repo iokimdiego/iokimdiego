@@ -1,9 +1,23 @@
+/* Folha de estilos style-index */
+
+/* Essa folha de estilos é utilizada na estilização do arquivo index.html e segue a sequência abaixo:
+  1 - Esilizações Gerais
+  2 - Cores padrões do tema
+  3 - Estilizaçao do Header
+      3.1 - Estilização do ícone de e-mail do header
+  4 - Estilização do banner principal
+
+*/
+
+/* 1 - Estilizações Gerais*/
+
 body {
     background-color: #f0f0f0;
     height: 100vh;
     margin: 0;
     /* font-family: 'Poppins', sans-serif; */
 }
+
 .container {
     background: #fff;
     padding: 30px;
@@ -11,12 +25,8 @@ body {
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
-.titulo-principal {
-    font-family: 'Poppins', sans-serif;
-    /* color: #26272A; */
-}
 
-/* Estilização de Cores */
+/* 2 - Cores padrões do tema */
 .destaque-azul {
     color: #2890EF;
 }
@@ -25,7 +35,7 @@ body {
 }
 
 
-/* Inínio da Estilização do header */
+/* 3 - Estilizaçao do Header */
 
 header .container{
   position: relative;
@@ -35,46 +45,65 @@ header .container{
   z-index: 2;
 }
 
-/* Estilização do ícone de e-mail do header */
-
-.banner {
+.titulo-principal {
+    font-family: 'Poppins', sans-serif;
+    /* color: #26272A; */
 }
+
+
+/* 3.1 - Estilização do ícone de e-mail do header */
 
 .btn-padrao {
     background-color: #2890EF;
 }
 
+
+/* 4 - Estilização do banner principal */
+
 .foto-web-developer{
     margin: 0;
     padding: 0;
     position: relative;
+    overflow: hidden;
+    /* width: 100%;
+    height: auto; */
 }
 
 .foto-web-developer img {
-    width: 100%;
     display: block;
+    width: 100%;
     height: auto;
     position: absolute;
+    bottom: 0;
+    right: 0;
     z-index: 3;
+    object-fit: contain;
 }
 
 .stack1, .stack2, .stack3, .stack4, .stack5,
 .stack6, .stack7, .stack8, .stack9 {
-  width: 32px;
-  height: 32px;
+  width: 5vw;
+  height: 5vw;
   display: flex;
   border-radius: 50%;
   position: absolute;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 16px;
+  font-size: 1.2vw;
   z-index: 2;
+}
+
+.stack1 img, .stack2 img, .stack3 img, .stack4 img, .stack5 img,
+.stack6 img, .stack7 img, .stack8 img, .stack9 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Garante que a imagem caiba dentro da div */
 }
 
 .stack1 {
     top: 10%;
-    left: 9%; 
+    left: 9%;
   }
 
   .stack2 {
@@ -83,13 +112,13 @@ header .container{
   }
 
   .stack3 {
-    top: 15%;
-    left: 30%;
+    top: 25%;
+    left: 24%;
   }
 
   .stack4 {
     bottom: 30%;
-    right: 6%;
+    right: 2%;
   }
 
   .stack5 {
@@ -119,11 +148,22 @@ header .container{
   .stack9 {
     width: 64px;
     height: 64px;
-    top: 18%;
-    left: 70%;
+    top: 2%;
+    left: 63%;
   }
 
   .caixa-azul-banner{
+    background-color: #EDF6FF;
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+
+  }
+  /* .caixa-azul-banner{
     background-color: #EDF6FF;
     width: 345px;
     height: 100%;
@@ -133,7 +173,58 @@ header .container{
     top: 0;
     right: 0;
 
+  } */
+
+  /* Media query para telas menores (celulares) */
+@media (max-width: 768px) {
+  .foto-web-developer {
+      /* Ajustes para layout de celular */
+      text-align: center; /* Exemplo: centralizar conteúdo */
   }
+
+  .foto-web-developer img {
+      position: static; /* A imagem volta ao fluxo normal */
+      width: 80%; /* Ocupa menos largura */
+      margin: 0 auto 20px; /* Centralizar e adicionar margem abaixo */
+  }
+
+  .stack1, .stack2, .stack3, .stack4, .stack5,
+  .stack6, .stack7, .stack8, .stack9 {
+      position: static; /* As stacks voltam ao fluxo normal */
+      width: 40px;
+      height: 40px;
+      font-size: 14px;
+      margin: 5px;
+  }
+
+  .stack5, .stack9 {
+      width: 50px;
+      height: 50px;
+      font-size: 16px;
+  }
+
+  .caixa-azul-banner {
+      position: static; /* Volta ao fluxo normal */
+      width: 100%;
+      height: auto;
+      /* Outros ajustes para a caixa azul no layout de celular */
+  }
+
+  .col-6:first-child {
+      /* Ajustes para a coluna de texto no celular */
+      order: 2; /* Coloca a coluna de texto abaixo da imagem */
+      text-align: center;
+  }
+
+  .col-6:last-child {
+      /* Ajustes para a coluna da imagem no celular */
+      order: 1; /* Coloca a coluna da imagem acima da coluna de texto */
+  }
+
+  .banner .row {
+      flex-direction: column-reverse; /* Inverte a ordem das colunas */
+  }
+}
 
   .stacks-brands {
     color: #AFB7C2;
