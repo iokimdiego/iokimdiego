@@ -9,7 +9,7 @@
   5 - Estilização da seção Stacks
   6 - Estilização da seção Sobre mim
   7 - Estilização da seção Skills
-
+  8 - Estilização da seção Experiências
 */
 
 /* 1 - Estilizações Gerais*/
@@ -372,4 +372,25 @@ header .container{
 
 .skills {
   background-color: #EDF6FF;
+}
+
+/* 8 - Estilização da seção Experiências */
+
+.legenda-setor {
+  width: 76px;
+  background-color: #2890EF;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  text-align: center;
+}
+
+.legenda-setor p {
+  font-size: 0.8em;
+  color: #fff;
+  padding: 0;
+  margin: 0;
 }
