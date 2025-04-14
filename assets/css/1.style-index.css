@@ -8,6 +8,7 @@
   4 - Estilização do banner principal
   5 - Estilização da seção Stacks
   6 - Estilização da seção Sobre mim
+  7 - Estilização da seção Skills
 
 */
 
@@ -185,7 +186,7 @@ header .container{
       font-size: 14px;
       margin: 5px;
   }
-  
+
   .stack5, .stack9 {
     width: 50px;
     height: 50px;
@@ -198,18 +199,18 @@ header .container{
       height: auto;
       /* Outros ajustes para a caixa azul no layout de celular */
   }
-  
+
   .col-6:first-child {
     /* Ajustes para a coluna de texto no celular */
     order: 2; /* Coloca a coluna de texto abaixo da imagem */
     text-align: center;
   }
-  
+
   .col-6:last-child {
     /* Ajustes para a coluna da imagem no celular */
     order: 1; /* Coloca a coluna da imagem acima da coluna de texto */
   }
-  
+
   .banner .row {
     flex-direction: column-reverse; /* Inverte a ordem das colunas */
   }
@@ -236,7 +237,7 @@ header .container{
   max-width: calc(14.28% - 10px); /* Define uma largura máxima para evitar que cresçam demais */
   padding: 5px; /* Adiciona um pouco de espaçamento interno */
 }
-  
+
   .stacks-brands i {
     font-size: 52px;
     padding-right: 4px;
@@ -269,6 +270,10 @@ header .container{
 
 /* 6 - Estilização da seção Sobre mim */
 
+.sobre-mim {
+
+}
+
 .foto-iokim {
   margin: 0;
   padding: 0;
@@ -297,7 +302,7 @@ header .container{
   top: 30%;
   left: 18%;
 }
-/* Ícone da matela fa-briefcase-solid */
+/* Ícone da maleta fa-briefcase-solid */
 .icon2 {
   border-radius: 50%;
   width: 3vw;
@@ -311,12 +316,12 @@ header .container{
   border-radius: 50%;
   width: 2.5vw;
   height: 2.5vw;
-  background-color: #91c4f354;
+  background-color: #EDF6FF;
   top: 1%;
   right: 20%;
 }
 /* Ícone fa-code */
-.icon4 { 
+.icon4 {
   border-radius: 50%;
   width: 5vw;
   height: 5vw;
@@ -331,7 +336,7 @@ header .container{
   width: 36vw;
   height: 36vw;
   border-radius: 50%;
-  background-color: #91c4f354;
+  background-color: #EDF6FF;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -351,4 +356,20 @@ header .container{
   right: 0;
   position: absolute;
   z-index: 3;
+}
+
+.linha {
+  background-color: #263238;
+  width: 3vw;
+  height: 1px;
+}
+
+.rede-social {
+  font-size: 2vw;
+}
+
+/* 7 - Estilização da seção Skills */
+
+.skills {
+  background-color: #EDF6FF;
 }
