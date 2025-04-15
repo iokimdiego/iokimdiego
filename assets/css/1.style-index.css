@@ -11,6 +11,7 @@
   7 - Estilização da seção Skills
   8 - Estilização da seção Experiências
   9 - Estilização da seção Serviços
+  10 - Estilização do Rodapé
 */
 
 /* 1 - Estilizações Gerais*/
@@ -457,4 +458,29 @@ header .container{
 
 .foto-programador img {
   border-radius: 0 0 0 80%;
+}
+
+/* 10 - Estilização do Rodapé */
+
+.logo-rodape img{
+  width: 6vw;
+}
+
+.logo-rodape p {
+  font-size: 14px;
+  width: 16vw;
+}
+
+.copyright-bar {
+  background-color: #263238;
+  color: #fafafa;
+  font-size: 12px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.copyright-bar p {
+  margin-top: 10px;
 }
