@@ -17,7 +17,7 @@
 /* 1 - Estilizações Gerais*/
 
 body {
-    background-color: #f0f0f0;
+    background-color: #fff;
     height: 100vh;
     margin: 0;
     /* font-family: 'Poppins', sans-serif; */
@@ -460,7 +460,13 @@ header .container{
   border-radius: 0 0 0 80%;
 }
 
-/* 10 - Estilização do Rodapé */
+/* 10 - Estilização do Projeto */
+.projeto {
+  
+}
+
+
+/* 11 - Estilização do Rodapé */
 
 .logo-rodape img{
   width: 6vw;
