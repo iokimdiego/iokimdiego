@@ -37,6 +37,14 @@ body {
 .azul-escuro {
     color: #263238;
 }
+.fundo-azul {
+  background-color: #2890EF;
+}
+
+.fundo-verde {
+  background-color: #2FB100;
+  color: #fff;
+}
 
 
 /* 3 - Estilizaçao do Header */
@@ -59,6 +67,7 @@ header .container{
 
 .btn-padrao {
     background-color: #2890EF;
+    color: #fff;
 }
 
 
