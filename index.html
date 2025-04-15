@@ -17,8 +17,8 @@
     <header>
         <!-- Início da Barra de Navegação (Topo da Página)-->
          <div class="container-fluid d-flex align-items-center sticty-top d-block">
-            <div class="container">
-                <div class="row">
+            <div class="container pb-5">
+                <div class="row pb-5">
                     <!--Início da Logomarca do site-->
                     <div class="col-lg-1 col-12 text-lg-start text-center">
                         <a href="/index.html">
@@ -56,7 +56,7 @@
         <section class="banner container pt-0 pb-0 pe-0">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6 pb-5">
+                    <div class="col-6 pb-5 mb-5">
                         <span class="lead display-6">Olá, 👋</span>
                         <h1 class="titulo-principal azul-escuro display-6 lead fw-bolder pt-2">Eu sou o Iokim Diego</h1>
                         <h1 class="titulo-principal azul-escuro display-6 lead fw-bolder">um <span class="destaque-azul">Desenvolvedor Full Stack</span></h1>
@@ -82,9 +82,9 @@
             </div>
         </section>
         <!-- Fim da Seção Banner -->
-        <section class="stacks container">
+        <section class="stacks container pt-5">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row pb-3">
                     <p class="lead text-center fw-bolder">Minha stack de desenvolvimento <span class="destaque-azul">principal</span> e ferramentas</p>
                 </div>
                 <div class="row">
@@ -147,7 +147,7 @@
                             </div>
                         </div>
                         <div class="row azul-escuro align-items-center justify-content-between pe-5 pb-4 mb-4">
-                            <div class="col-4">
+                            <div class="col-4 pb-5">
                                 <a href="#" class="btn btn-padrao" role="button" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a>
                             </div>
                             <div class="linha col-1 d-flex"></div>
@@ -167,30 +167,46 @@
         <section class="skills container">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6">
-                        <h4 class="destaque-azul pb-5 mb-0">Habilidades</h4>
+                    <div class="col-6 pb-5 mb-5">
+                        <h4 class="destaque-azul pt-3 pb-5">Habilidades</h4>
                         <h2 class="azul-escuro pb-4">Habilidades criativas e profissionais em diversas áreas</h2>
                         <p class="azul-escuro pb-4">Competências que vão além da programação. Habilidades em design, visão estratégica de negócios, organização de projetos e comunicação. Skills que me permitem atuar de forma estratégica e criativa no desenvolvimento de soluções eficientes e alinhadas aos objetivos de cada cliente.</p>
                         <a href="#" class="btn btn-padrao" role="button" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a>
                     </div>
                     <div class="col-6 d-flex align-items-center">
                         <div class="col-12">
+                            <!-- 1ª Skill -->
                             <p class="fw-bolder pb-0 mb-0">Desenvolvimento Front-End (HTML, CSS, Bootstrap, Figma)</p>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar fundo-azul" style="width: 85%"></div>
-                              </div>
+                            <div class="d-flex align-items-center">
+                                <div class="col-10 progress justify-content-between" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar fundo-azul" style="width: 85%"></div>
+                                </div>
+                                <span class="destaque-azul fw-bolder ps-3">85%</span>
+                            </div>
+                            <!-- 2ª Skill -->
                             <p class="fw-bolder mt-2 mb-0">Desenvolvimento Back-End (PHP & MySQL)</p>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar fundo-azul" style="width: 75%"></div>
-                              </div>
+                            <div class="d-flex align-items-center">
+                                <div class="col-10 progress justify-content-between" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar fundo-azul" style="width: 75%"></div>
+                                </div>
+                                <span class="destaque-azul fw-bolder ps-3">75%</span>
+                            </div>
+                            <!-- 3ª Skill -->
                             <p class="fw-bolder mt-2 mb-0">JavaScript <small class="fw-normal destaque-azul">(em evolução)</small></p>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar fundo-azul" style="width: 40%"></div>
-                              </div>
+                            <div class="d-flex align-items-center">
+                                <div class="col-10 progress justify-content-between" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar fundo-azul" style="width: 40%"></div>
+                                </div>
+                                <span class="destaque-azul fw-bolder ps-3">40%</span>
+                            </div>
+                            <!-- 4ª Skill -->
                             <p class="fw-bolder mt-2 mb-0">Versionamento de Código (Git & GitHub)</p>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar fundo-azul" style="width: 70%"></div>
-                              </div>
+                            <div class="d-flex align-items-center">
+                                <div class="col-10 progress justify-content-between" role="progressbar" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar fundo-azul" style="width: 70%"></div>
+                                </div>
+                                <span class="destaque-azul fw-bolder ps-3">70%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -199,9 +215,9 @@
         <!-- Fim da Seção Skills -->
         <section class="experiencias container">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <h4 class="destaque-azul pb-5">Experiências</h4>
+                <div class="row d-flex justify-content-center">
+                    <h4 class="destaque-azul pt-3 pb-5">Experiências</h4>
+                    <div class="col-8">
                         <h2 class="azul-escuro text-center pb-4">Experiência diversificada</h2>
                         <p class="azul-escuro text-center pb-5">A vivência em diversos setores, como comércio, serviço público e gastronomia, entrega <strong>inovação</strong> com <strong>visão estratégica</strong>, foco na <strong>experiência do usuário</strong> e <strong>otimização dos processos</strong></p>
                     </div>
@@ -247,16 +263,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center pt-5"><a href="#" class="btn btn-padrao" role="button" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a></div>
+                <div class="text-center pt-5 mt-5 mb-5"><a href="#" class="btn btn-padrao" role="button" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a></div>
             </div>
         </section>
         <!-- Fim da seção Experiência -->
         <section class="servicos container-fluid" id="servicos">
             <div class="container">
                 <div class="row">
-                    <h4 class="destaque-azul pb-5">Serviços</h4>
+                    <h4 class="destaque-azul pb-5 mb-5">Serviços</h4>
                     <div class="col-6">
-                        <h2 class="azul-escuro pb-4">Procura <strong class="destaque-azul">soluções digitais</strong> personalizadas para o seu negócio?</h2>
+                        <h2 class="azul-escuro pb-4 mb-4">Procura <strong class="destaque-azul">soluções digitais</strong> personalizadas para o seu negócio?</h2>
                         <div class="col-12">
                             <!-- Serviço 1 -->
                             <div class="servicos">
@@ -324,7 +340,7 @@
                         <img src="assets/img/pexels-fotios-photos-16129724.jpg" class="img-fluid" alt="Foto de um programador">
                     </div>
                 </div>
-                <div class="text-center pt-5"><a href="#" class="btn btn-padrao" role="button" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a></div>
+                <div class="text-center pt-5 pb-5 mb-5"><a href="#" class="btn btn-padrao" role="button" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a></div>
             </div>
         </section>
         <!-- Fim da seção Serviços -->
@@ -334,7 +350,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h2 class="azul-escuro text-center mt-3 pt-md-5 pb-md-4">Você tem algum projeto em mente?</h2>
-                            <p class="azul-escuro text-center pb-md-3">Preencha o formulário abaixo ou, se preferir, converse comigo pelo WhatsApp. Estou pronto para te ajudar a criar uma solução sob medida para o seu negócio!</p>
+                            <p class="azul-escuro text-center pb-md-4">Preencha o formulário abaixo ou, se preferir, converse comigo pelo WhatsApp. Estou pronto para te ajudar a criar uma solução sob medida para o seu negócio!</p>
                         </div>
                     </div>
                     <div class="row">
