@@ -74,7 +74,7 @@ header .container{
     text-align: start;
   }
   header img{
-    width: 50px;
+    width: 80px;
   }
   .caixa-azul-banner {
     display: none !important;
@@ -211,7 +211,7 @@ header .container{
 @media (max-width: 999px) {
   .banner {
     width: 100%;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
 
   .banner .row{
