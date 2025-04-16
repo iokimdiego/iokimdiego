@@ -25,7 +25,7 @@ body {
 
 .container {
     background: #fff;
-    padding: 30px;
+    /* padding: 30px; */
     /* border-radius: 10px; */
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
@@ -61,6 +61,37 @@ header .container{
 .titulo-principal {
     font-family: 'Poppins', sans-serif;
     /* color: #26272A; */
+}
+
+/* Dispositivos móveis */
+@media (max-width: 999px) {
+  .menu-normal {
+    visibility: hidden;
+  }
+  .menu-sanduiche {
+    visibility: visible;
+    justify-content: space-between;
+    text-align: start;
+  }
+  header img{
+    width: 50px;
+  }
+  .caixa-azul-banner {
+    display: none !important;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
+/* Dispositivos de tela grande */
+@media (min-width: 999px) {
+  .menu-normal {
+    visibility: visible;
+  }
+  .menu-sanduiche {
+    visibility: hidden;
+  }
 }
 
 
@@ -177,30 +208,50 @@ header .container{
   }
 
   /* Media query para telas menores (celulares) */
-@media (max-width: 768px) {
-  .foto-web-developer {
-      /* Ajustes para layout de celular */
-      text-align: center; /* Exemplo: centralizar conteúdo */
+@media (max-width: 999px) {
+  .banner {
+    width: 100%;
+    margin-top: 80px;
   }
 
-  .foto-web-developer img {
-      position: static; /* A imagem volta ao fluxo normal */
-      width: 80%; /* Ocupa menos largura */
-      margin: 0 auto 20px; /* Centralizar e adicionar margem abaixo */
+  .banner .row{
+    display:block;
+    padding: 10px;
+
   }
+
+  .box-titulo-principal {
+    width: 100%;
+
+  }
+  
+  .box-titulo-principal p {
+    font-size: 16px;
+
+  }
+
+  .box-titulo-principal img {
+    width: 300px;
+    align-items: center;
+  }
+  
+ 
+
+
 
   .stack1, .stack2, .stack3, .stack4, .stack5,
   .stack6, .stack7, .stack8, .stack9 {
-      position: static; /* As stacks voltam ao fluxo normal */
-      width: 40px;
-      height: 40px;
-      font-size: 14px;
-      margin: 5px;
+    position: static; /* As stacks voltam ao fluxo normal */
+    width: 5px;
+    height: 5px;
+    font-size: 14px;
+    margin: 5px;
+    visibility: hidden;
   }
 
   .stack5, .stack9 {
-    width: 50px;
-    height: 50px;
+    width: 5px;
+    height: 5px;
     font-size: 16px;
   }
 
@@ -280,10 +331,6 @@ header .container{
 }
 
 /* 6 - Estilização da seção Sobre mim */
-
-.sobre-mim {
-
-}
 
 .foto-iokim {
   margin: 0;
@@ -376,7 +423,7 @@ header .container{
 }
 
 .rede-social {
-  font-size: 2vw;
+  font-size: 32px;
 }
 
 /* 7 - Estilização da seção Skills */
@@ -461,15 +508,13 @@ header .container{
 }
 
 /* 10 - Estilização do Projeto */
-.projeto {
-  
-}
+
 
 
 /* 11 - Estilização do Rodapé */
 
 .logo-rodape img{
-  width: 6vw;
+  width: 120px;
 }
 
 .logo-rodape p {

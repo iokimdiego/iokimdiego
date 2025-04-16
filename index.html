@@ -2,10 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfólio de Iokim Diego, Full Stack Developer. Confira meus projetos em desenvolvimento web, design de interfaces e programação. Vamos criar algo incrível juntos!">
     <link rel="shortcut icon" href="assets/img/logo-id-dev.png">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/1.style-index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,14 +15,52 @@
 </head>
 <body>
     <header id="inicio">
-        <!-- Início da Barra de Navegação (Topo da Página)-->
-         <div class="container-fluid d-flex align-items-center sticty-top d-block">
+        <!-- Início da Barra de Navegação - Telas Pequenas -->
+        <nav class="navbar menu-sanduiche bg-body-light fixed-top d-lg-none">
+            <div class="container-fluid ps-4 pe-3 col-12 d-flex justify-content-between">
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/img/logo-id-dev.png" alt="Logomarca do site"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre-mim">Sobre mim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#habilidades">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experiencias">Experiências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicos">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projetos">Projetos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Fim da Barra de Navegação - Telas Pequenas -->
+        <!-- Início da Barra de Navegação - Telas Grandes-->
+         <div class="container-fluid menu-normal d-flex align-items-center sticty-top d-none d-lg-block">
             <div class="container pb-5">
                 <div class="row pb-5">
                     <!--Início da Logomarca do site-->
                     <div class="col-lg-1 col-12 text-lg-start text-center">
                         <a href="/index.html">
-                            <img class="img-fluid" src="assets/img/logo-id-dev.png" width="70rem" alt="Logomarca do site">
+                            <img class="img-fluid" src="assets/img/logo-id-dev.png" alt="Logomarca do site">
                         </a>
                     </div>
                     <!--Fim da Logomarca do site-->
@@ -45,7 +83,7 @@
                         <a class="nav-link text-light-emphasis" href="#projetos"><i class="fa-regular fa-envelope destaque-azul"></i><span class="ps-2">iokimdiego@hotmail.com</span></a>
                     </div>
                     <!-- Fim do Link de e-mail -->
-                    <div class="caixa-azul-banner"></div> <!-- Retângulo azul -->
+                    <div class="caixa-azul-banner d-none d-lg-block"></div> <!-- Retângulo azul -->
                 </div>
             </div>
          </div>
@@ -56,39 +94,42 @@
         <section class="banner container pt-0 pb-0 pe-0">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6 pb-5 mb-5">
+                    <div class="col-lg-6 box-titulo-principal pb-lg-5 mb-5">
                         <span class="lead display-6">Olá, 👋</span>
                         <h1 class="titulo-principal azul-escuro display-6 lead fw-bolder pt-2">Eu sou o Iokim Diego</h1>
                         <h1 class="titulo-principal azul-escuro display-6 lead fw-bolder">um <span class="destaque-azul">Desenvolvedor Full Stack</span></h1>
                         <p class="lead azul-escuro pt-4 pb-4">Oi, eu sou Iokim Diego, um desenvolvedor full stack de Manaus. Transformo ideias em soluções web completas, eficientes e de qualidade. Minha missão é unir design, funcionalidade e performance para entregar projetos eficientes e impactantes.</p>
-                        <a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-padrao ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button">
-                            <span class="pe-3">Vamos conversar</span><i class="fa-solid fa-chevron-right"></i>
-                        </a>
+                        <div class="text-lg-start text-center">
+                            <a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-padrao ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button">
+                                <span class="pe-3">Vamos conversar</span><i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <img src="assets/img/smiley-man-working-laptop-from-home-transparente.png" class="img-fluid d-lg-none" alt="Foto de um Web Developer">
                     </div>
-                    <div class="col-6 foto-web-developer pb-0">
-                        <img src="assets/img/smiley-man-working-laptop-from-home-transparente.png" alt="Foto de um Web Developer">
-                        <div class="stack1"><img src="assets/img/icons/Visual_Studio_Code_1.35_icon.svg.png" alt="Logo Visual Studio"></div>
-                        <div class="stack2"><img src="assets/img/icons/Bootstrap_logo.svg" alt="Logo bootstrap"></div>
-                        <div class="stack3"><img src="assets/img/icons/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML 5"></div>
-                        <div class="stack4"><img src="assets/img/icons/Figma-logo.svg.png" alt="Logo Figma"></div>
-                        <div class="stack5"><img src="assets/img/icons/PHP-logo.svg.png" alt="Logo PHP"></div>
-                        <div class="stack6"><img src="assets/img/icons/github-brands.svg" alt="Logo GitHub"></div>
-                        <div class="stack7"><img src="assets/img/icons/smile.png" alt="Smile"></div>
-                        <div class="stack8"><img src="assets/img/icons/code-solid.svg" alt="Código"></div>
-                        <div class="stack9"><img src="assets/img/icons/mysql-4096.png" alt="Logo MySQL"></div>
-                        <div class="caixa-azul-banner"></div> <!-- Retângulo azul -->
+                    <div class="foto-web-developer d-none d-lg-block col-lg-6 col-12 pb-0">
+                        <img src="assets/img/smiley-man-working-laptop-from-home-transparente.png" class="img-fluid" alt="Foto de um Web Developer">
+                        <div class="stack1"><img src="assets/img/icons/Visual_Studio_Code_1.35_icon.svg.png" alt="Logo Visual Studio" class="img-fluid"></div>
+                        <div class="stack2"><img src="assets/img/icons/Bootstrap_logo.svg" alt="Logo bootstrap" class="img-fluid"></div>
+                        <div class="stack3"><img src="assets/img/icons/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML 5" class="img-fluid"></div>
+                        <div class="stack4"><img src="assets/img/icons/Figma-logo.svg.png" alt="Logo Figma" class="img-fluid"></div>
+                        <div class="stack5"><img src="assets/img/icons/PHP-logo.svg.png" alt="Logo PHP" class="img-fluid"></div>
+                        <div class="stack6"><img src="assets/img/icons/github-brands.svg" alt="Logo GitHub" class="img-fluid"></div>
+                        <div class="stack7"><img src="assets/img/icons/smile.png" alt="Smile" class="img-fluid"></div>
+                        <div class="stack8"><img src="assets/img/icons/code-solid.svg" alt="Código" class="img-fluid"></div>
+                        <div class="stack9"><img src="assets/img/icons/mysql-4096.png" alt="Logo MySQL" class="img-fluid"></div>
+                        <div class="caixa-azul-banner d-none d-lg-block"></div> <!-- Retângulo azul -->
                     </div>
                 </div>
             </div>
         </section>
         <!-- Fim da Seção Banner -->
-        <section class="stacks container pt-5" id="sobre-mim">
+        <section class="stacks container pt-lg-5 pt-0 pb-lg-0 pb-5" id="sobre-mim">
             <div class="container-fluid">
                 <div class="row pb-3">
-                    <p class="lead text-center fw-bolder">Minha stack de desenvolvimento <span class="destaque-azul">principal</span> e ferramentas</p>
+                    <h2 class="azul-escuro text-center pb-4">Minha stack de desenvolvimento <span class="destaque-azul">principal</span> e ferramentas</h2>
                 </div>
                 <div class="row">
-                    <div class="stacks-brands d-flex justify-content-center text-center align-items-center">
+                    <div class="stacks-brands justify-content-center text-center align-items-center d-none d-lg-flex">
                         <div class="col-2 d-flex align-items-center">
                             <i class="fa-brands fa-php"></i><span> Linguagem Back-End</span>
                         </div>
@@ -111,6 +152,55 @@
                             <i class="fa-solid fa-database"></i><span>Banco de Dados</span>
                         </div>
                     </div>
+                    <!-- Início da apresentação das Stacks em carousel automático do Bootstrap -->
+                    <div id="carouselStacks" class="carousel slide d-lg-none d-block" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="2000">
+                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
+                                <i class="fa-brands fa-php"></i><span> Linguagem Back-End</span>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
+                                <i class="fa-brands fa-html5"></i><span> HTML e Front-End</span>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
+                                <i class="fa-brands fa-css3-alt"></i><span> CSS e Bootstrap</span>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
+                                <i class="fa-brands fa-square-js"></i><span> JavaScript</span>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
+                                <i class="fa-brands fa-figma"></i><span> Design Responsivo e Prototipado</span>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
+                                <i class="fa-brands fa-github"></i><span>Controle de versão</span>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
+                                <i class="fa-solid fa-database"></i><span>Banco de Dados</span>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselStacks" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselStacks" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- Fim do carousel -->
                 </div>
             </div>
         </section>
@@ -118,44 +208,46 @@
         <section class="sobre-mim container pb-0">
             <div class="continer-fluid">
                 <div class="row">
-                    <div class="foto-iokim col-6">
+                    <div class="foto-iokim col-12 col-lg-6">
                         <div class="fundo-circulo-azul"></div>
                         <div class="icon1"><i class="fa-solid fa-user-graduate"></i></div>
                         <div class="icon2"><i class="fa-solid fa-briefcase"></i></div>
                         <div class="icon3"></div>
                         <div class="icon4"><i class="fa-solid fa-code"></i></div>
-                        <img class="img-fluid" src="assets/img/5.png" alt="Foto do Iokim">
+                        <img class="img-fluid " src="assets/img/5.png" alt="Foto do Iokim">
                     </div>
-                    <div class="texto-sobre-mim col-6">
-                        <div class="row">   
-                            <h4 class="destaque-azul pb-0 mb-0">Sobre mim</h4>
-                            <p class="azul-escuro pb-4">@iokimdiego</p>
-                            <h2 class="azul-escuro pb-4">Desenvolvimento com propósito</h2>
-                            <p class="azul-escuro pb-4 pe-5">Com experiência no desenvolvimento front-end e back-end, estou sempre em busca de evolução: atualmente estudo JavaScript com profundidade e desenvolvo projetos pessoais para aplicar e expandir meus conhecimentos. Meu propósito é entregar resultados de qualidade, alinhados às necessidades de cada cliente ou negócio.</p>
-                            <div class="azul-escuro pb-5">
-                                <div class="d-flex justify-content-between pb-2">
-                                    <div class="col-6">
-                                        <strong class="">Nome:</strong><span class=""> Iokim Diego</span>
+                    <div class="texto-sobre-mim col-12 col-lg-6">
+                        <div class="container-fluid p-3">
+                            <div class="row">
+                                <h4 class="destaque-azul pb-0 mb-0">Sobre mim</h4>
+                                <p class="azul-escuro pb-4">@iokimdiego</p>
+                                <h2 class="azul-escuro pb-4">Desenvolvimento com propósito</h2>
+                                <p class="azul-escuro pb-4 pe-5">Com experiência no desenvolvimento front-end e back-end, estou sempre em busca de evolução: atualmente estudo JavaScript com profundidade e desenvolvo projetos pessoais para aplicar e expandir meus conhecimentos. Meu propósito é entregar resultados de qualidade, alinhados às necessidades de cada cliente ou negócio.</p>
+                                <div class="azul-escuro pb-5">
+                                    <div class="d-flex justify-content-between pb-2">
+                                        <div class="col-6">
+                                            <strong class="">Nome:</strong><span class=""> Iokim Diego</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <strong class="">Local:</strong><span class=""> Manaus/Amazonas</span>
+                                        </div>
                                     </div>
-                                    <div class="col-6">
-                                        <strong class="">Local:</strong><span class=""> Manaus/Amazonas</span>
+                                    <div class="">
+                                        <strong>E-mail:</strong><span class=""> iokimdiego@hotmail.com</span>
                                     </div>
-                                </div>    
-                                <div class="">
-                                    <strong>E-mail:</strong><span class=""> iokimdiego@hotmail.com</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row azul-escuro align-items-center justify-content-between pe-5 pb-4 mb-4">
-                            <div class="col-4">
-                                <a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-padrao ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a>
-                            </div>
-                            <div class="linha col-1 d-flex"></div>
-                            <div class="col-6 d-flex justify-content-between align-items-center">
-                                <span class="azul-escuro">Conecte-se comigo!</span>
-                                <div class="rede-social">
-                                    <a href="https://www.linkedin.com/in/iokimdiego/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                                    <a href="https://github.com/iokimdiego" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+                            <div class="row azul-escuro align-items-center justify-content-between pe-5 pb-4 mb-4">
+                                <div class="col-md-5 col-lg-5 text-center">
+                                    <a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-padrao ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a>
+                                </div>
+                                <div class="linha col-1 d-lg-flex d-none"></div>
+                                <div class="col-lg-6 d-flex justify-content-lg-between justify-content-between align-items-center pt-lg-0 pt-3">
+                                    <span class="azul-escuro">Conecte-se comigo!</span>
+                                    <div class="rede-social text-center">
+                                        <a href="https://www.linkedin.com/in/iokimdiego/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="https://github.com/iokimdiego" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -165,15 +257,15 @@
         </section>
         <!-- Fim da seção Sobre mim -->
         <section class="skills d-flex justify-content-center" id="habilidades">
-            <div class="col-10 p-5">
+            <div class="col-lg-10 p-5">
                 <div class="row">
-                    <div class="col-6 pb-5 mb-5">
+                    <div class="col-lg-6 pb-lg-5 pb-5 mb-lg-5">
                         <h4 class="destaque-azul pt-3 pb-5">Habilidades</h4>
                         <h2 class="azul-escuro pb-4">Habilidades criativas e profissionais em diversas áreas</h2>
                         <p class="azul-escuro pb-4">Competências que vão além da programação. Habilidades em design, visão estratégica de negócios, organização de projetos e comunicação. Skills que me permitem atuar de forma estratégica e criativa no desenvolvimento de soluções eficientes e alinhadas aos objetivos de cada cliente.</p>
                         <a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-padrao ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a>
                     </div>
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-lg-6 d-flex align-items-center">
                         <div class="col-12">
                             <!-- 1ª Skill -->
                             <p class="fw-bolder pb-0 mb-0">Desenvolvimento Front-End (HTML, CSS, Bootstrap, Figma)</p>
@@ -217,13 +309,13 @@
             <div class="container-fluid">
                 <div class="row d-flex justify-content-center">
                     <h4 class="destaque-azul pt-3 pb-5">Experiências</h4>
-                    <div class="col-8">
+                    <div class="col-lg-8">
                         <h2 class="azul-escuro text-center pb-4">Experiência diversificada</h2>
                         <p class="azul-escuro text-center pb-5">A vivência em diversos setores, como comércio, serviço público e gastronomia, entrega <strong>inovação</strong> com <strong>visão estratégica</strong>, foco na <strong>experiência do usuário</strong> e <strong>otimização dos processos</strong></p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-4">
+                <div class="row d-flex">
+                    <div class="col-lg-4 col-12">
                         <div class="card">
                             <img src="assets/img/portrait-successful-middle-aged-manager-businessman-holding-tablet-computer-large-warehouse-organizing-distribution.jpg" class="card-img-top img-fluid" alt="">
                             <div class="card-body">
@@ -236,7 +328,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-12 pt-lg-0 pt-3">
                         <div class="card">
                             <img src="assets/img/freepik__the-style-is-candid-image-photography-with-natural__87567.jpeg" class="card-img-top img-fluid" alt="">
                             <div class="card-body">
@@ -249,7 +341,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-12 pt-lg-0 pt-3">
                         <div class="card">
                             <img src="assets/img/happy-professional-male-chef-looking-camera.jpg" class="card-img-top img-fluid" alt="">
                             <div class="card-body">
@@ -271,8 +363,8 @@
             <div class="container">
                 <div class="row">
                     <h4 class="destaque-azul pb-5 mb-5">Serviços</h4>
-                    <div class="col-6">
-                        <h2 class="azul-escuro pb-4 mb-4">Procura <strong class="destaque-azul">soluções digitais</strong> personalizadas para o seu negócio?</h2>
+                    <h2 class="azul-escuro text-center pb-4 mb-4">Procura <strong class="destaque-azul">soluções digitais</strong> personalizadas para o seu negócio?</h2>
+                    <div class="col-lg-6 col-12">
                         <div class="col-12">
                             <!-- Serviço 1 -->
                             <div class="servicos">
@@ -336,7 +428,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="foto-programador col-6">
+                    <div class="foto-programador col-lg-6 col-12 d-lg-block d-none">
                         <img src="assets/img/pexels-fotios-photos-16129724.jpg" class="img-fluid" alt="Foto de um programador">
                     </div>
                 </div>
@@ -345,8 +437,8 @@
         </section>
         <!-- Fim da seção Serviços -->
         <section class="projeto" id="projetos">
-            <div class="d-flex justify-content-center fundo-azul p-5">
-                <div class="card col-12 col-md-8 col-lg-6 shadow-sm p-4 mb-2 bg-gray d-flex justify-content-center">
+            <div class="d-flex justify-content-center fundo-azul p-lg-5 p-2">
+                <div class="card col-lg-8 col-12 shadow-sm p-4 mb-2 bg-gray d-flex justify-content-center">
                     <div class="row">
                         <div class="col-12">
                             <h2 class="azul-escuro text-center mt-3 pt-md-5 pb-md-4">Você tem algum projeto em mente?</h2>
@@ -377,8 +469,8 @@
                                         <textarea name="mensagem" id="mensagem" class="form-control" placeholder="Digite a sua mensagem" rows="5" required></textarea>
                                         <label for="mensagem" class="form-label">Escreva a sua mensagem</label>
                                     </div>
-                                    <div class="d-flex justify-content-center pt-4 pb-5">
-                                        <button type="submit" class="btn btn-padrao me-4"><i class="fa-regular fa-paper-plane"></i><span class="ms-2">Enviar mensagem</span></button>
+                                    <div class="d-flex justify-content-lg-center justify-content-between pt-4 pb-5">
+                                        <button type="submit" class="btn btn-padrao me-lg-4 me-0"><i class="fa-regular fa-paper-plane "></i><span class="ms-2">Enviar mensagem</span></button>
                                         <div class=""><a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn fundo-verde ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a></div>
                                     </div>
                                 </fieldset>
@@ -390,31 +482,34 @@
         </section>
         <!-- Fim da Seção Projetos: Formulário de Contato -->
     </main>
-    <footer class="container-fluid p-0">
+    <footer class="p-0 m-0">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-4 logo-rodape">
+                <div class="col-lg-4 col-12 logo-rodape text-lg-start text-center">
                     <img src="assets/img/logo-id-dev.png" class="img-fluid logo-id-dev" alt="Logo ID Dev">
-                    <p class="azul-escuro">Desenvolvendo soluções digitais personalizadas para o seu negócio.</p>
-                    <div class="rede-social">
+                    <p class="azul-escuro d-none d-lg-block">Desenvolvendo soluções digitais personalizadas para o seu negócio.</p>
+                    <div class="rede-social mb-lg-0 mb-4">
                         <a href="https://www.linkedin.com/in/iokimdiego/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin azul-escuro"></i></a>
                         <a href="https://github.com/iokimdiego" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github azul-escuro"></i></a>
                     </div>
                 </div>
-                <!-- Menu Nav do Rodapé -->
-                <div class="col-7 d-flex justify-content-between">
+                <!-- Menu Nav para dispositivos mobiles -->
+                
+                <!-- Fim do Menu Nav para dispositivos mobiles -->
+                <!-- Menu Nav do Rodapé (telas grandes) -->
+                <div class="col-lg-7 col-12 d-lg-flex d-block justify-content-between pt-lg-4 pb-lg-5">
                     <!-- 1ª Coluna: Sobre -->
-                    <div class="">
+                    <div class="col-lg-3 col-12 text-lg-start text-center mb-lg-0 mb-4">
                         <ul class="nav flex-column">
                             <h5 class="azul-escuro">Sobre</h5>
-                            <li class="nav-item"><a href="#sobre-mim" class="nav-link azul-escuro ps-0">Stacks</a></li>
-                            <li class="nav-item"></li><a href="#" class="nav-link azul-escuro ps-0">Perfil</a></li>
-                            <li class="nav-item"></li><a href="#experiencias" class="nav-link azul-escuro ps-0">Experiência</a></li>
-                            <li class="nav-item"></li><a href="#servicos" class="nav-link azul-escuro ps-0">Serviços</a></li>
+                            <li class="nav-item"><a href="#sobre-mim" class="nav-link azul-escuro ps-lg-0">Stacks</a></li>
+                            <li class="nav-item"></li><a href="#" class="nav-link azul-escuro ps-lg-0">Perfil</a></li>
+                            <li class="nav-item"></li><a href="#experiencias" class="nav-link azul-escuro ps-lg-0">Experiência</a></li>
+                            <li class="nav-item"></li><a href="#servicos" class="nav-link azul-escuro ps-lg-0">Serviços</a></li>
                         </ul>
                     </div>
                     <!-- 2ª Coluna: Habilidades -->
-                    <div class="">
+                    <div class="d-none d-lg-flex col-lg-3 col-12 text-lg-start text-center">
                         <ul class="nav flex-column">
                             <h5 class="azul-escuro">Habilidades</h5>
                             <li class="nav-item"><a href="#habilidades" class="nav-link azul-escuro ps-0">Técnicas</a></li>
@@ -422,7 +517,7 @@
                         </ul>
                     </div>
                     <!-- 3ª Coluna: Projetos -->
-                    <div class="">
+                    <div class="d-none d-lg-block">
                         <ul class="nav flex-column">
                             <h5 class="azul-escuro">Projetos</h5>
                             <li class="nav-item"><a href="#" class="nav-link azul-escuro ps-0">Projeto 1</a></li>
@@ -431,23 +526,24 @@
                         </ul>
                     </div>
                     <!-- 4ª Coluna: Contato -->
-                    <div class="">
+                    <div class="text-lg-start text-center mb-lg-0 mb-4">
                         <ul class="nav flex-column">
                             <h5 class="azul-escuro">Contato</h5>
-                            <li class="nav-item"><a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="nav-link azul-escuro ps-0" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp me-2"></i>+55 (92) 98194-0300</a></li>
-                            <li class="nav-item"><a href="#projetos" class="nav-link azul-escuro ps-0"><i class="fa-regular fa-envelope me-2"></i>iokimdiego@hotmail.com</a></li>
+                            <li class="nav-item"><a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="nav-link azul-escuro ps-lg-0" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp me-2"></i>+55 (92) 98194-0300</a></li>
+                            <li class="nav-item"><a href="#projetos" class="nav-link azul-escuro ps-lg-0"><i class="fa-regular fa-envelope me-2"></i>iokimdiego@hotmail.com</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-12 copyright-bar">
+        <div class="col-12 copyright-bar pb-0 mb-0">
             <p>&copy; 2025 Iokim Diego. Todos os direitos reservados.</p>
         </div>
     </footer>
     <!-- Área de Adição do Javascript -->
      <script src="assets/js/1.index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js"></script>
 </body>
