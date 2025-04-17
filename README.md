@@ -23,9 +23,8 @@ Atualmente, foco em projetos Full Stack para fortalecer meu portfólio e contrib
 
 Aqui estarão alguns dos meus projetos mais relevantes:  
 
-🔹 **[Nome do Projeto 1](link-do-repositorio)** – Descrição breve do projeto.  
-🔹 **[Nome do Projeto 2](link-do-repositorio)** – Descrição breve do projeto.  
-🔹 **[Nome do Projeto 3](link-do-repositorio)** – Descrição breve do projeto.  
+🔹 **[Site Portfólio](https://github.com/iokimdiego/iokimdiego)** – Meu portfólio de Desenvolvedor Full Stack.  
+  
 
 🔗 Veja mais projetos no meu [Portfólio](https://www.iokimdiego.dev.br)  
 
