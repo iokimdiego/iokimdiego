@@ -1,0 +1,139 @@
+/* Criação de Variáveis */
+
+:root {
+    --background-color: #5E6B7C;
+    --calculadora-color: #F2F3F7;
+    --btn-color:#F2F3F7;
+    --numero-color: #0D0F1A;
+    --especiais-color: #67687b;
+    --border-radius-base: 20px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* Reset básico de CSS */
+* {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------------------------------------------------------------- */
+
+body {
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center;     /* Centraliza na vertical */
+    height: 100vh;           /* Faz o body ocupar toda a altura da tela */
+    background-color: var(--background-color);
+}
+
+
+/* Estilização da Calculadora */
+
+.box-calculadora {
+    background-color: var(--calculadora-color);
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    border: 2px transparent;
+    border-radius: var(--border-radius-base);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(145, 145, 145, 0.1);
+    }
+
+/* Estilização dos botões */
+
+.botoes {
+    display: block;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn {
+    /* padding: 8px; */
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--numero-color);
+    background-color: var(--btn-color);
+    border: 0;
+    border-radius: var(--border-radius-base);
+    box-shadow: 0 1px 8px 0 rgba(207, 205, 205, 0.1), 0 1px 20px 0 rgba(145, 145, 145, 0.1);
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px 10px 5px;
+}
+
+/* Estilos específicos para os 3 primeiros filhos da classe "botoes" */
+.botoes :nth-child(-n+3) {
+    color: var(--especiais-color);
+}
+
+#zero {
+    width: 155px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.operador {
+    color: #E5972A;
+}
+
+.display {
+    background-color: rgb(213, 231, 226);
+    border-radius: 20px 20px 0 0;
+}
+
+.display-calculo {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 40px;
+}
+
+.display-historico {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 25px;
+}
+
+#limpar-historico {
+    font-size: 14px;
+    color: var(--especiais-color);
+    margin-left: 10px;
+    margin-bottom: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+
+/* Animação do clique dos botões */
+
+.btn {
+    /* transition: transform 0.1s ease, box-shadow 0.1s ease; */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    user-select: none; /* Evita seleção de texto ao clicar */
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2) inset; /* Efeito de sombra interna ao clicar */
+}
