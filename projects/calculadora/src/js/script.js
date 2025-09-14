@@ -201,7 +201,7 @@ function percentual() {
 // --------------------------------------------------------------------
 // Passo 7: gerenciar cliques nos botões
 
-botoes.forEach(botao => {
+document.querySelectorAll('.btn').forEach(botao => {
     botao.addEventListener('click', () => {
         const valor = botao.textContent;
 
