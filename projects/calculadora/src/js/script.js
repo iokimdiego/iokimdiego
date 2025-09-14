@@ -275,8 +275,6 @@ document.addEventListener('keydown', (evento) => {
 
     // Se for Backspace, apaga o último dígito
     else if (tecla === 'Backspace') {
-        valorAtual = valorAtual.slice(0, -1) || '0';                    // Remove o último caractere ou volta para '0'
-        expressao = expressao.slice(0, -1) || '';                       // Remove o último caractere da expressão
-        atualizarDisplayExpressao();                                    // Atualiza o display com a expressão completa
+        apagarUltimo();
     }
 });
