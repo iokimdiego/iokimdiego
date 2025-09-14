@@ -35,14 +35,14 @@ a {
 
 /* -------------------------------------------------------------------------- */
 
-body {
+main {
     display: flex;
     justify-content: center; /* Centraliza na horizontal */
     align-items: center;     /* Centraliza na vertical */
     height: 100vh;           /* Faz o body ocupar toda a altura da tela */
     background-color: var(--background-color);
+    margin-bottom: 0px;
 }
-
 
 /* Estilização da Calculadora */
 
@@ -106,7 +106,8 @@ body {
 .display-calculo {
     text-align: right;
     padding-right: 20px;
-    font-size: 40px;
+    padding-bottom: 10px;
+    font-size: 30px;
 }
 
 .display-historico {
