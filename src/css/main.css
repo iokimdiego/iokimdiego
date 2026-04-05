@@ -25,3 +25,25 @@ section {
     max-width: 1100px;
     margin: 0 auto;
 }
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.higlight {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--gradient);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
