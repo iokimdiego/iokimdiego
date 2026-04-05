@@ -19,14 +19,9 @@ const projects = [
     }
 ];
 
-function renderProjects() {
-    const container = document.querySelector('.projects-container');
-
-    projects.forEach(project => {
-        const card = document.createElement('div');
-        card.classList.add('project-card');
-
-        card.innerHTML = `
+function createProjectCard(project) {
+    return `
+        <div class="project-card">
             <img src="${project.image}" alt="Miniatura do projeto ${project.title}" class="project-thumbnail">
             <h3>${project.title}</h3>
             <p>${project.description}</p>
@@ -35,10 +30,15 @@ function renderProjects() {
                 ? `<a href="${project.url}" target="_blank" rel="noopener noreferrer">Ver Projeto</a>` 
                 : `<span class="coming-soon">Em breve</span>`
             }
-        `;
-
-        container.appendChild(card);
-    });
+        </div>
+    `;
 }
 
-renderProjects();
+function renderProjects() {
+    const container = document.querySelector('.projects-container');
+    container.innerHTML = projects.map(createProjectCard).join('');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderProjects();
+});
