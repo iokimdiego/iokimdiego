@@ -74,7 +74,8 @@ section {
     background-color: var(--bg-secondary);
     padding: 20px;
     border-radius: 12px;
-    border: 1px solid var(--accent-secondary);
+    /* border: 1px solid var(--accent-secondary); */
+    border: 1px solid #1e293b;
     transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
     .project-card:hover {
@@ -91,6 +92,7 @@ section {
         display: block;
     }
     .project-card h3 {
+        font-size: 1.2rem;
         margin-bottom: 10px;
     }
     .project-card p {
@@ -105,6 +107,12 @@ section {
     }
     .project-card a:hover {
         text-decoration: underline;
+    }
+    .coming-soon {
+        display: inline-block;
+        margin-top: 10px;
+        color: var(--text-secondary);
+        font-style: italic;
     }
 
 @media (max-width: 960px) {
