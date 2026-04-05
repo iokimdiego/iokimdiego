@@ -1,0 +1,73 @@
+# Dependências
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+.netbeans/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Arquivos de build e distribuição
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache
+.cache/
+.eslintcache
+.jshintrc
+*.cache
+
+# Testes
+coverage/
+.nyc_output/
+
+# Arquivos temporários
+tmp/
+temp/
+
+# Arquivos específicos do SO
+.AppleDouble/
+.LSOverride/
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Diretórios gerados
+dist/
+out/
+
+# Diretórios específicos do projeto
+legacy/
