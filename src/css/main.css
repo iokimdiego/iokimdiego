@@ -1,3 +1,11 @@
+@import url('./base/variables.css');
+
 body {
-    background-color: red;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: var(--accent-primary);
 }
