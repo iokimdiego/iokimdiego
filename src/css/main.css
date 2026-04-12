@@ -143,20 +143,169 @@ section {
 }
 
 #hero {
-    text-align: center;
-    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 96px 20px 72px;
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
 }
-    #hero h1 {
-        font-size: 2.5rem;
+
+#hero::before,
+#hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+#hero::before {
+    width: 360px;
+    height: 360px;
+    background: rgba(81, 43, 212, 0.32);
+    top: -120px;
+    right: -80px;
+}
+
+#hero::after {
+    width: 320px;
+    height: 320px;
+    background: rgba(6, 182, 212, 0.2);
+    bottom: -140px;
+    left: -80px;
+}
+
+.hero-shell {
+    position: relative;
+    z-index: 1;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 34px 30px;
+    text-align: center;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 22px;
+    background: linear-gradient(155deg, rgba(15, 23, 42, 0.94), rgba(2, 6, 23, 0.78));
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+}
+
+.hero-kicker {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    background: rgba(15, 23, 42, 0.65);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-size: 0.73rem;
+}
+
+.hero-name {
+    font-size: clamp(2.2rem, 7.8vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.hero-name .highlight {
+    background: var(--gradient);
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hero-name-flow 3.2s ease-in-out infinite alternate;
+}
+
+@keyframes hero-name-flow {
+    from {
+        background-position: 0% 50%;
     }
-    #hero h2 {
-        font-size: 2rem;
-        margin-top: 10px;
+    to {
+        background-position: 100% 50%;
     }
-    #hero p {
-        margin-top: 10px;
-        color: var(--text-secondary);
+}
+
+.hero-goal {
+    margin: 18px auto 0;
+    max-width: 720px;
+    font-size: clamp(0.98rem, 2.3vw, 1.14rem);
+    color: var(--text-secondary);
+}
+
+.hero-actions {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.button-secondary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(15, 23, 42, 0.55);
+    transition: transform 220ms ease, border-color 220ms ease, background-color 220ms ease;
+}
+
+.button-secondary:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-secondary);
+    background: rgba(15, 23, 42, 0.85);
+}
+
+.hero-actions .button-primary,
+.hero-actions .button-secondary {
+    margin-top: 0;
+}
+
+.hero-socials {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hero-social-link {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(15, 23, 42, 0.55);
+    transition: transform 200ms ease, border-color 200ms ease, background-color 200ms ease;
+}
+
+.hero-social-link svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.hero-social-link:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-primary);
+    background: rgba(81, 43, 212, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-name .highlight {
+        animation: none;
     }
+}
 
 .highlight {
     background: var(--gradient);
@@ -321,6 +470,15 @@ section {
     .about-image {
         margin-top: 20px;
     }
+
+    #hero {
+        min-height: 75vh;
+        padding-top: 112px;
+    }
+
+    .hero-shell {
+        padding: 28px 20px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -346,6 +504,23 @@ section {
 
     .nav-links a {
         padding: 9px 12px;
+    }
+
+    #hero {
+        padding-top: 104px;
+    }
+
+    .hero-kicker {
+        letter-spacing: 0.09em;
+    }
+
+    .hero-goal {
+        font-size: 0.95rem;
+    }
+
+    .hero-social-link {
+        width: 38px;
+        height: 38px;
     }
 
     .projects-container {
