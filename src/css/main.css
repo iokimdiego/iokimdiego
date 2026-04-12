@@ -42,6 +42,14 @@ section {
     position: sticky;
     top: 0;
     z-index: 1000;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    transition: background-color 240ms ease, border-color 240ms ease, backdrop-filter 240ms ease, -webkit-backdrop-filter 240ms ease;
+}
+
+.site-header.is-scrolled {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background: rgba(15, 23, 42, 0.85);
@@ -53,8 +61,8 @@ section {
     margin: 0 auto;
     padding: 14px 20px;
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "brand role links cta";
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "brand role links";
     align-items: center;
     gap: 12px;
 }
@@ -96,7 +104,7 @@ section {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    gap: 8px;
+    gap: 4px;
     flex-wrap: wrap;
 }
 
@@ -132,27 +140,6 @@ section {
 
 .nav-links a:hover::after {
     transform: scaleX(1);
-}
-
-.nav-cta {
-    grid-area: cta;
-    justify-self: end;
-    display: inline-block;
-    padding: 9px 14px;
-    border-radius: 10px;
-    background: var(--gradient);
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 10px 25px rgba(81, 43, 212, 0.22);
-    transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
-}
-
-.nav-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 14px 30px rgba(81, 43, 212, 0.32);
-    filter: brightness(1.05);
 }
 
 #hero {
@@ -309,11 +296,11 @@ section {
 
 @media (max-width: 768px) {
     .main-nav {
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "brand cta"
-            "role role"
-            "links links";
+            "brand"
+            "role"
+            "links";
         gap: 12px;
     }
 
@@ -342,8 +329,7 @@ section {
         grid-template-areas:
             "brand"
             "role"
-            "links"
-            "cta";
+            "links";
     }
 
     .nome-dev {
@@ -360,12 +346,6 @@ section {
 
     .nav-links a {
         padding: 9px 12px;
-    }
-
-    .nav-cta {
-        width: 100%;
-        text-align: center;
-        justify-self: stretch;
     }
 
     .projects-container {
