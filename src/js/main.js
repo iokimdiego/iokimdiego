@@ -50,8 +50,42 @@ function updateHeaderOnScroll() {
     }
 }
 
+function setupMobileMenu() {
+    const nav = document.querySelector('.main-nav');
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    if (!nav || !toggle) return;
+
+    const closeMenu = () => {
+        nav.classList.remove('menu-open');
+        toggle.setAttribute('aria-expanded', 'false');
+    };
+
+    toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('menu-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navLinks.forEach((link) => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeMenu();
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     renderProjects();
+    setupMobileMenu();
     updateHeaderOnScroll();
     window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
 });

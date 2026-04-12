@@ -67,6 +67,36 @@ section {
     gap: 12px;
 }
 
+.nav-toggle {
+    display: none;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 10px;
+    width: 44px;
+    height: 40px;
+    padding: 8px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--text-primary);
+    transition: transform 200ms ease;
+}
+
+.nav-toggle:hover {
+    border-color: var(--accent-primary);
+    background: rgba(81, 43, 212, 0.2);
+}
+
 .brand-block {
     grid-area: brand;
 }
@@ -305,6 +335,10 @@ section {
     .hero-name .highlight {
         animation: none;
     }
+
+    .nav-links {
+        transition: none;
+    }
 }
 
 .highlight {
@@ -445,21 +479,60 @@ section {
 
 @media (max-width: 768px) {
     .main-nav {
-        grid-template-columns: 1fr;
+        padding: 8px 14px;
+        grid-template-columns: 1fr auto;
         grid-template-areas:
-            "brand"
-            "role"
-            "links";
-        gap: 12px;
+            "brand toggle"
+            "links links";
+        gap: 8px;
+    }
+
+    .brand-block {
+        justify-self: start;
+    }
+
+    .nav-toggle {
+        grid-area: toggle;
+        justify-self: end;
+        display: inline-flex;
+        width: 40px;
+        height: 36px;
+        padding: 6px;
+    }
+
+    .main-nav.menu-open .nav-toggle span:nth-child(1) {
+        transform: translateY(3px) rotate(45deg);
+    }
+
+    .main-nav.menu-open .nav-toggle span:nth-child(2) {
+        transform: translateY(-3px) rotate(-45deg);
     }
 
     .dev-role {
-        justify-self: center;
+        display: none;
     }
 
     .nav-links {
         justify-self: stretch;
         justify-content: center;
+        display: flex;
+        opacity: 0;
+        transform: translateY(-8px);
+        max-height: 0;
+        overflow: hidden;
+        pointer-events: none;
+        padding: 12px;
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 14px;
+        background: rgba(2, 6, 23, 0.75);
+        transition: opacity 220ms ease, transform 220ms ease, max-height 260ms ease;
+    }
+
+    .main-nav.menu-open .nav-links {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 220px;
+        pointer-events: auto;
     }
 
     .about-container {
@@ -472,30 +545,26 @@ section {
     }
 
     #hero {
-        min-height: 75vh;
-        padding-top: 112px;
+        min-height: calc(100dvh - 64px);
+        padding-top: 72px;
+        padding-bottom: 48px;
     }
 
     .hero-shell {
-        padding: 28px 20px;
+        padding: 24px 18px;
     }
 }
 
 @media (max-width: 640px) {
     .main-nav {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr auto;
         grid-template-areas:
-            "brand"
-            "role"
+            "brand toggle"
             "links";
     }
 
     .nome-dev {
         font-size: 1.05rem;
-    }
-
-    .dev-role {
-        font-size: 0.78rem;
     }
 
     .nav-links {
@@ -507,7 +576,9 @@ section {
     }
 
     #hero {
-        padding-top: 104px;
+        min-height: calc(100dvh - 60px);
+        padding-top: 64px;
+        padding-bottom: 42px;
     }
 
     .hero-kicker {
