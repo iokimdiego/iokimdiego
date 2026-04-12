@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
@@ -16,6 +20,13 @@ body {
 h2 {
     color: var(--accent-primary);
 }
+
+a {
+    cursor: pointer;
+}
+    a:hover {
+    opacity: 0.9;
+    }
 
 
 section {
