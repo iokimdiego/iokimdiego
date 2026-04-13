@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Catálogo completo de projetos de Iokim Diego, organizado por categorias para recrutadores.">
+	<title>Projetos | Iokim Diego</title>
+	<link rel="icon" href="../public/images/logo-id-dev.png" type="image/x-icon">
+	<link rel="stylesheet" href="../src/css/main.css">
+	<link rel="stylesheet" href="assets/css/projects-pages.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="main-nav" aria-label="Navegação Principal">
+			<div class="brand-block">
+				<h1 class="nome-dev">
+					<img src="../public/images/logo-id-dev.png" alt="Logo ID Dev" class="logo-id-dev">
+					<span class="highlight">IOKIM DIEGO</span>
+				</h1>
+			</div>
+			<button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+				<span></span>
+				<span></span>
+			</button>
+			<p class="dev-role">C# .NET Developer</p>
+			<ul class="nav-links" id="primary-navigation">
+				<li><a href="../index.html#hero">Início</a></li>
+				<li><a href="../index.html#about">Sobre</a></li>
+				<li><a href="index.html">Projetos</a></li>
+				<li><a href="../index.html#contact">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="projects-catalog-page">
+		<section class="catalog-hero">
+			<div class="container">
+				<p class="catalog-kicker">Projetos & Experiência Prática</p>
+                <h2>Catálogo de Projetos de Desenvolvimento</h2>
+                <p>
+                Explore projetos organizados por categoria, com foco em backend utilizando C# e .NET. Cada projeto apresenta detalhes técnicos, arquitetura, tecnologias utilizadas e links para código e publicação.
+                </p>
+                <a href="https://github.com/iokimdiego" target="_blank" rel="noopener noreferrer" class="catalog-github-link">
+                Ver repositórios no GitHub
+                </a>
+			</div>
+		</section>
+
+		<section class="catalog-section">
+			<div class="container">
+				<div class="catalog-filters" aria-label="Filtros de categorias"></div>
+				<div id="catalogSections" class="catalog-sections" aria-live="polite"></div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>© 2026 Iokim Diego. Todos os direitos reservados.</p>
+	</footer>
+
+	<script src="assets/js/projects-data.js" defer></script>
+	<script src="assets/js/projects-shared.js" defer></script>
+	<script src="assets/js/projects-catalog.js" defer></script>
+</body>
+</html>

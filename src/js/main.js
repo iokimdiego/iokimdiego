@@ -1,7 +1,7 @@
 const projects = [
     {
         category: "Frontend / Landing Pages",
-        title: "Landing Page - Gerlen Mascarenhas",
+        title: "Dra. Gerlen Mascarenhas",
         description: "Landing page profissional para captação de clientes.",
         liveUrl: "https://www.gerlenmascarenhas.com.br",
         detailsUrl: "projects/index.html",
@@ -90,7 +90,7 @@ function renderProjects() {
         ? projects
         : projects.filter((project) => project.category === activeProjectCategory);
 
-    container.innerHTML = filteredProjects.map(createProjectCard).join('');
+    container.innerHTML = filteredProjects.slice(0, 3).map(createProjectCard).join('');
 }
 
 function setupProjectFilters() {
