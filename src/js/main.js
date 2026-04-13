@@ -154,10 +154,56 @@ function setupMobileMenu() {
     });
 }
 
+function setupContactForm() {
+    const form = document.querySelector('.contact-form');
+    if (!form) return;
+
+    const status = form.querySelector('.contact-form-status');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const name = form.querySelector('#contact-name')?.value.trim() || '';
+        const email = form.querySelector('#contact-email')?.value.trim() || '';
+        const subject = form.querySelector('#contact-subject')?.value.trim() || '';
+        const message = form.querySelector('#contact-message')?.value.trim() || '';
+
+        if (!name || !email || !subject || !message) {
+            if (status) {
+                status.textContent = 'Preencha todos os campos antes de enviar.';
+                status.classList.remove('is-success');
+                status.classList.add('is-error');
+            }
+            return;
+        }
+
+        const whatsappMessage = [
+            'Ola, Iokim! Quero entrar em contato pelo site.',
+            '',
+            `Nome: ${name}`,
+            `E-mail: ${email}`,
+            `Assunto: ${subject}`,
+            `Mensagem: ${message}`
+        ].join('\n');
+
+        const whatsappUrl = `https://wa.me/5592981940300?text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+
+        if (status) {
+            status.textContent = 'Mensagem preparada! Você será redirecionado para o WhatsApp.';
+            status.classList.remove('is-error');
+            status.classList.add('is-success');
+        }
+
+        form.reset();
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     renderProjectFilters();
     renderProjects();
     setupProjectFilters();
+    setupContactForm();
     setupMobileMenu();
     updateHeaderOnScroll();
     window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
