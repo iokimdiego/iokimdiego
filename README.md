@@ -1,4 +1,4 @@
-# Hi, I'm Iokim Diego 👋
+# Hi, I'm Iôkim Diego 👋
 
 Junior Fullstack Developer focused on .NET backend, building real-world web applications and REST APIs.
 
@@ -79,7 +79,7 @@ Landing page developed for client acquisition, applying SEO and performance best
 Portfolio built to showcase projects and technical evolution.
 
 **Tech:** HTML, CSS, JavaScript  
-🔗 (update here when using iokim.dev)
+🔗 Portifolio: [https://iokimdiego.dev.br/]
 
 ---
 
