@@ -1,100 +1,104 @@
 # Hi, I'm Iokim Diego 👋
 
-Backend-focused .NET Developer specializing in building scalable, well-structured APIs with ASP.NET Core.
+Junior Fullstack Developer focused on .NET backend, building real-world web applications and REST APIs.
 
-I bring over 10 years of professional experience in business operations, public service, and technical support — where I developed strong analytical thinking, problem-solving skills, process optimization expertise, and long-term strategic vision.
-
-Currently focused on backend development with C# and .NET, preparing for global remote opportunities in high-performance engineering environments.
+Currently transitioning into software development, combining hands-on projects with a strong background in business operations, problem-solving, and technical support.
 
 ---
 
 ## 🎯 Career Focus
 
-- Backend Development with .NET
-- RESTful API Design
-- Clean and Maintainable Architecture
-- Scalable and Reliable Systems
-- Open to Global Remote Opportunities
+- Fullstack Development (with backend focus)
+- ASP.NET Core Web APIs
+- Relational Databases (SQL)
+- Clean and Organized Code
+- First opportunity as a Junior Developer (Remote or Local)
 
 ---
 
-# 🚀 Core Specialization Stack
+## 🚀 Tech Stack
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![Web API](https://img.shields.io/badge/Web_API-000000?style=for-the-badge&logo=swagger&logoColor=white)
-![Entity Framework Core](https://img.shields.io/badge/Entity_Framework_Core-6DB33F?style=for-the-badge)
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![REST](https://img.shields.io/badge/REST-02569B?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
-# 🌱 Currently Studying & Expanding
+## 📚 Currently Learning
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![xUnit](https://img.shields.io/badge/xUnit-5C2D91?style=for-the-badge)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-000000?style=for-the-badge)
-![SOLID](https://img.shields.io/badge/SOLID-1E90FF?style=for-the-badge)
-![Design Patterns](https://img.shields.io/badge/Design_Patterns-8A2BE2?style=for-the-badge)
-
----
-
-# 🧭 Next Technologies in My Learning Roadmap
-
-![Microservices](https://img.shields.io/badge/Microservices-000000?style=for-the-badge)
-![CQRS](https://img.shields.io/badge/CQRS-DC143C?style=for-the-badge)
-![DDD](https://img.shields.io/badge/Domain_Driven_Design-2E8B57?style=for-the-badge)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI/CD-0A0A0A?style=for-the-badge)
-
----
-
-# 🏗️ Featured Backend Projects
-
-## 🔹 Flagship Backend API (In Development)
-
-A structured ASP.NET Core REST API designed with Clean Architecture principles, authentication, database integration, and layered organization.
-
-**Focus Areas:**
-- RESTful design
+- Entity Framework Core
+- API Design Best Practices
 - Authentication & Authorization
-- Entity Framework Core integration
-- Structured domain logic
-- Maintainable and scalable architecture
-
-🚧 Currently under active development – repository will be available soon.
+- Docker (basics)
+- Clean Architecture concepts
 
 ---
 
-## 🌐 Personal Portfolio Website
+## 🧭 Learning Roadmap
 
-Professional portfolio website built to showcase my transition into software development.
+- Advanced API Design
+- Testing (xUnit)
+- CI/CD fundamentals
+- Cloud basics (Azure)
+- System design fundamentals (entry-level)
+
+---
+
+## 🏗️ Projects
+
+### 🔹 Backend API (In Progress)
+
+REST API built with ASP.NET Core to practice real-world backend development.
+
+**What I'm working on:**
+- CRUD operations
+- Authentication & authorization
+- Database integration (SQL)
+- Organized project structure
+
+🚧 Work in progress
+
+---
+
+### 🌐 Landing Page – Dra. Gerlen Mascarenhas
+
+Landing page developed for client acquisition, applying SEO and performance best practices.
 
 **Tech:** HTML, CSS, JavaScript  
-🔗 Live: https://iokimdiego.dev.br  
+🔗 Live: https://www.gerlenmascarenhas.com.br
 
 ---
 
-## 🧠 Professional Background
+### 💼 Personal Portfolio Website
 
-- 10+ years in business and public sector operations
-- Strong expertise in problem-solving and process optimization
-- Technical support experience focused on user experience
+Portfolio built to showcase projects and technical evolution.
+
+**Tech:** HTML, CSS, JavaScript  
+🔗 (update here when using iokim.dev)
+
+---
+
+## 🧠 Background
+
+- 10+ years in business operations and public sector
+- Strong problem-solving and analytical thinking
+- Experience with technical support and user-focused solutions
 - MBA in Public Management
-- Currently pursuing a degree in Systems Analysis and Development
+- Currently studying Systems Analysis and Development
 
 ---
 
-## 🔭 What I'm Building
+## 🔭 Current Focus
 
-- Real-world backend API projects
-- Structured and maintainable codebases
-- Strong technical communication in English
-- Solid foundations for scalable distributed systems
+- Build consistent real-world projects
+- Strengthen backend fundamentals with .NET
+- Improve technical English
+- Get first opportunity as a developer
 
 ---
 
@@ -108,6 +112,5 @@ Professional portfolio website built to showcase my transition into software dev
 ## ⚡ Personal Note
 
 Father of three.  
-Disciplined learner.  
-Long-term thinker.  
-Focused on building a global-level software engineering career.
+Disciplined and consistent learner.  
+Focused on long-term growth in software engineering.
