@@ -1,550 +1,338 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfólio de Iokim Diego, Full Stack Developer. Confira meus projetos em desenvolvimento web, design de interfaces e programação. Vamos criar algo incrível juntos!">
-    <link rel="shortcut icon" href="assets/img/logo-id-dev.png">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/1.style-index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <title>Iokim Diego - Full Stack Developer</title>
-</head>
-<body>
-    <header id="inicio">
-        <!-- Início da Barra de Navegação - Telas Pequenas -->
-        <nav class="navbar menu-sanduiche bg-body-light d-lg-none">
-            <div class="container-fluid ps-4 pe-3 col-12 d-flex justify-content-between">
-                <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/img/logo-id-dev.png" alt="Logomarca do site"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Desenvolvedor Backend C# .NET especializado em APIs e sistemas web.">
+        <link rel="icon" href="public/images/logo-id-dev.png" type="image/x-icon">
+        <title>Iokim Diego | C# .NET Developer</title>
+        
+        <link rel="stylesheet" href="src/css/main.css">
+        
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="main-nav" aria-label="Navegação Principal">
+                <div class="brand-block">
+                    <h1 class="nome-dev">
+                        <img src="public/images/logo-id-dev.png" alt="Logo ID Dev" class="logo-id-dev">
+                        <span class="highlight">IOKIM DIEGO</span>
+                    </h1>
+                </div>
+                <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+                    <span></span>
+                    <span></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <p class="dev-role">C# .NET Developer</p>
+                <ul class="nav-links" id="primary-navigation">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="hero">
+                <div class="container">
+                    <div class="hero-shell">
+                        <div class="hero-content">
+                            <p class="hero-eyebrow">
+                                Fullstack Developer • Backend Focus (.NET)
+                            </p>
+                            <h2 class="hero-name">
+                                Desenvolvendo aplicações web completas com foco em 
+                                <span class="highlight">C# e .NET</span>
+                            </h2>
+                            <p class="hero-goal">
+                                Atuo no desenvolvimento de aplicações web, criando interfaces modernas e APIs bem estruturadas, com foco em organização de código, integração com banco de dados e evolução contínua em ambiente de produção.
+                            </p>
+                            <div class="hero-proof-list">
+                                <span>REST APIs com ASP.NET Core</span>
+                                <span>Integração com bancos SQL</span>
+                                <span>Arquitetura em camadas</span>
+                                <span>Clean Code e manutenção</span>
+                            </div>
+                            <div class="hero-actions">
+                                <a href="#contact" class="button-primary">Entrar em contato</a>
+                                <a href="projects/index.html" class="button-secondary">Ver projetos</a>
+                            </div>
+                        </div>
+                        <aside class="hero-authority">
+                            <p class="hero-authority-kicker">Technical Snapshot</p>
+                            <div class="hero-code-card">
+                                <p><span class="code-keyword">stack</span> = <span class="code-string">"C# + .NET + JavaScript + SQL"</span>;</p>
+                                <p><span class="code-keyword">focus</span> = <span class="code-string">"Fullstack (Backend-oriented)"</span>;</p>
+                                <p><span class="code-keyword">approach</span> = <span class="code-string">"Clean, scalable and maintainable"</span>;</p>
+                            </div>
+                            <div class="hero-authority-grid">
+                                <article>
+                                    <strong>Backend APIs</strong>
+                                    <span>Design de endpoints e regras de negócio</span>
+                                </article>
+                                <article>
+                                    <strong>Frontend</strong>
+                                    <span>Interfaces funcionais e integração com APIs</span>
+                                </article>
+                                <article>
+                                    <strong>Code Quality</strong>
+                                    <span>Organização, legibilidade e boas práticas</span>
+                                </article>
+                            </div>
+                        </aside>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#sobre-mim">Sobre mim</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#habilidades">Habilidades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#experiencias">Experiências</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#servicos">Serviços</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projetos">Projetos</a>
-                            </li>
-                        </ul>
+                </div>
+            </section>
+            <section id="about">
+                <div class="container about-container">
+                    <div class="about-content">
+                        <p class="about-kicker">Sobre</p>
+                        <h2>
+                        Desenvolvimento de aplicações web com foco em estrutura, clareza e evolução contínua
+                        </h2>
+                        <p class="about-lead">
+                        Sou desenvolvedor Fullstack com foco em backend utilizando C# e ASP.NET Core, atuando na construção de APIs, integração com banco de dados e desenvolvimento de aplicações web completas.
+                        </p>
+                        <p>
+                        Tenho como abordagem a organização de código com separação de responsabilidades, uso de boas práticas como Clean Code e desenvolvimento orientado à manutenção e escalabilidade.
+                        </p>
+                        <div class="about-stack">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>ASP.NET Core</span>
+                            <span>JavaScript</span>
+                            <span>REST APIs</span>
+                            <span>SQL</span>
+                        </div>
+                        <div class="about-metrics">
+                            <article class="about-metric">
+                                <h3>API Development</h3>
+                                <p>Criação de APIs REST com organização em camadas, rotas bem definidas e tratamento consistente de dados.</p>
+                            </article>
+                            <article class="about-metric">
+                                <h3>Code Structure</h3>
+                                <p>Separação de responsabilidades, legibilidade e organização voltadas à manutenção e evolução contínua.</p>
+                            </article>
+                            <article class="about-metric">
+                                <h3>Data Integration</h3>
+                                <p>Integração com bancos de dados relacionais, modelagem de dados e uso de ORM com Entity Framework.</p>
+                            </article>
+                            <article class="about-metric">
+                                <h3>Problem Solving</h3>
+                                <p>Foco em transformar requisitos em soluções técnicas simples, funcionais e alinhadas ao contexto do projeto.</p>
+                            </article>
+                        </div>
                     </div>
+                    <aside class="about-visual" aria-label="Resumo profissional de Iokim Diego">
+                        <div class="about-image-frame">
+                            <img src="public/images/profile.png" alt="Foto de Iokim Diego" class="about-image">
+                        </div>
+                        <div class="about-panels">
+                            <article class="about-panel">
+                                <h3>Objetivo</h3>
+                                <p>Atuar como desenvolvedor backend .NET, contribuindo no desenvolvimento e evolução de sistemas reais.</p>
+                            </article>
+                            <article class="about-panel">
+                                <h3>Diferencial</h3>
+                                <p>Capacidade de organizar soluções backend com foco em clareza, manutenção e aplicação prática.</p>
+                            </article>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+            <section id="projects" class="projects-section">
+                <div class="container">
+                    <div class="projects-heading">
+                        <p class="projects-kicker">Projetos</p>
+                        <h2>Projetos e Experiência Prática</h2>
+                        <p>
+                            Projetos desenvolvidos com foco em backend utilizando C# e .NET, incluindo APIs REST, integração com banco de dados e construção de sistemas web escaláveis.
+                        </p>
+                    </div>
+                    <div class="projects-filters" aria-label="Filtros de categorias de projetos"></div>
+                    <div class="projects-container" aria-live="polite"></div>
+                    <a href="projects/index.html" class="projects-more-link">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5h-2v5H5V5h5V3zm4 0v2h3.59l-9.3 9.29 1.42 1.42L19 6.41V10h2V3h-7z"></path>
+                        </svg>
+                        Ver mais projetos
+                    </a>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container contact-wrap">
+                    <div class="contact-header">
+                        <p class="contact-kicker">Contato</p>
+                        <h2>Vamos construir algo juntos</h2>
+                        <p>
+                            Estou disponível para oportunidades como desenvolvedor backend .NET, projetos freelance e colaboração em projetos e desenvolvimento de soluções.
+                        </p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <form class="contact-form" action="#" method="post">
+                            <h3 class="contact-card-title">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 7L4 6.5V18h16V6.5L12 11zm0 2.2-8-4V6l8 4 8-4v3.2l-8 4z"></path>
+                                </svg>
+                                <span>Olá, mundo!</span>
+                            </h3>
+                            <label for="contact-name">Nome</label>
+                            <input id="contact-name" name="name" type="text" placeholder="Seu nome" required>
+
+                            <label for="contact-email">E-mail</label>
+                            <input id="contact-email" name="email" type="email" placeholder="seuemail@exemplo.com" required>
+
+                            <label for="contact-subject">Assunto</label>
+                            <input id="contact-subject" name="subject" type="text" placeholder="Ex: Projeto backend .NET" required>
+
+                            <label for="contact-message">Mensagem</label>
+                            <textarea id="contact-message" name="message" rows="5" placeholder="Conte um pouco sobre seu projeto ou oportunidade..." required></textarea>
+
+                            <button type="submit" class="contact-submit">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.53 0 .2 5.34.2 11.9c0 2.1.55 4.16 1.6 5.97L0 24l6.33-1.66a11.78 11.78 0 0 0 5.75 1.47h.01c6.55 0 11.88-5.34 11.88-11.9 0-3.18-1.24-6.17-3.45-8.43zM12.1 21.8h-.01a9.8 9.8 0 0 1-4.99-1.36l-.36-.21-3.76.99 1-3.67-.24-.38a9.86 9.86 0 0 1-1.52-5.27c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.11 1.03 6.97 2.9a9.79 9.79 0 0 1 2.9 6.98c0 5.46-4.44 9.9-9.89 9.9zm5.43-7.4c-.3-.15-1.75-.86-2.02-.95-.27-.1-.47-.15-.67.15-.2.3-.76.95-.94 1.15-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.37-1.46-.87-.78-1.45-1.73-1.62-2.03-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.63-.92-2.23-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.08-.8.37-.27.3-1.04 1.01-1.04 2.46s1.07 2.84 1.22 3.04c.15.2 2.1 3.26 5.1 4.57.71.31 1.27.5 1.7.64.71.23 1.35.2 1.86.12.56-.08 1.75-.72 2-1.42.25-.7.25-1.3.18-1.42-.08-.12-.27-.2-.57-.35z"></path>
+                                </svg>
+                                <span>Enviar mensagem</span>
+                            </button>
+                            <p class="contact-form-status" aria-live="polite"></p>
+                        </form>
+
+                        <aside class="contact-info" aria-label="Informações de contato">
+                            <h3 class="contact-card-title">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0 2c4.42 0 8 2.24 8 5v1H4v-1c0-2.76 3.58-5 8-5zm-7.5 4.4v.6h15v-.6c0-1.72-2.88-3.4-7.5-3.4s-7.5 1.68-7.5 3.4z"></path>
+                                </svg>
+                                <span>Informações de contato</span>
+                            </h3>
+                            <ul class="contact-info-list">
+                                <li class="contact-item-card">
+                                    <span class="contact-item-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 7L4 6.5V18h16V6.5L12 11z"></path></svg>
+                                    </span>
+                                    <div><strong>E-mail:</strong> <a href="mailto:iokimdiego@hotmail.com">iokimdiego@hotmail.com</a></div>
+                                </li>
+                                <li class="contact-item-card">
+                                    <span class="contact-item-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.51 2.87 8.34 6.84 9.69.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.09 0-1.13.39-2.05 1.03-2.78-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.06A9.3 9.3 0 0 1 12 6.84c.85 0 1.7.12 2.5.35 1.9-1.34 2.74-1.06 2.74-1.06.55 1.42.2 2.47.1 2.73.64.73 1.03 1.65 1.03 2.78 0 3.96-2.34 4.83-4.57 5.08.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.59.69.49A10.26 10.26 0 0 0 22 12.23C22 6.58 17.52 2 12 2z"></path></svg>
+                                    </span>
+                                    <div><strong>GitHub:</strong> <a href="https://github.com/iokimdiego" target="_blank" rel="noopener noreferrer">github.com/iokimdiego</a></div>
+                                </li>
+                                <li class="contact-item-card">
+                                    <span class="contact-item-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24"><path d="M6.94 8.5a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44zM5.43 9.82h3.03V19h-3.03V9.82zm4.77 0h2.9v1.25h.04c.4-.75 1.38-1.54 2.83-1.54 3.03 0 3.59 2.02 3.59 4.65V19h-3.02v-4.24c0-1.01-.02-2.31-1.4-2.31-1.4 0-1.62 1.11-1.62 2.24V19h-3.02V9.82z"></path></svg>
+                                    </span>
+                                    <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/iokimdiego" target="_blank" rel="noopener noreferrer">linkedin.com/in/iokimdiego</a></div>
+                                </li>
+                                <li class="contact-item-card">
+                                    <span class="contact-item-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm10.25 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg>
+                                    </span>
+                                    <div><strong>Instagram:</strong> <a href="https://www.instagram.com/iokimdiego" target="_blank" rel="noopener noreferrer">instagram.com/iokimdiego</a></div>
+                                </li>
+                                <li class="contact-item-card">
+                                    <span class="contact-item-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 1 8 8c0 5.25-8 12-8 12S4 15.25 4 10a8 8 0 0 1 8-8zm0 2a6 6 0 0 0-6 6c0 3.43 4.52 8.26 6 9.72 1.48-1.46 6-6.29 6-9.72a6 6 0 0 0-6-6zm0 3.2a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6z"></path></svg>
+                                    </span>
+                                    <div><strong>Localização:</strong> Manaus, AM - Brasil</div>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-brand-head">
+                        <img src="public/images/logo-id-dev.png" alt="Logo ID Dev" class="footer-logo">
+                        <h3>Iokim Diego</h3>
+                    </div>
+                    <p>
+                        Desenvolvedor Backend com foco em C# e .NET, criando APIs e sistemas web orientados a desempenho, qualidade e valor de negócio.
+                    </p>
+                </div>
+
+                <nav class="footer-column" aria-label="Links do rodapé">
+                    <h4>Navegação</h4>
+                    <a href="#hero">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                    <a href="projects/index.html">Catálogo completo</a>
+                </nav>
+
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <a href="mailto:iokimdiego@hotmail.com" class="footer-contact-item">
+                        <span class="footer-contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M4 6.5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1Zm0 1.7v.2l8 4.9 8-4.9v-.2H4Zm16 7.6V10l-7.5 4.6a1 1 0 0 1-1 0L4 10v5.8h16Z"/>
+                            </svg>
+                        </span>
+                        <span>iokimdiego@hotmail.com</span>
+                    </a>
+                    <a href="https://wa.me/5592981940300?text=Ol%C3%A1%2C%20Iokim!%20Gostaria%20de%20conversar%20sobre%20uma%20oportunidade." target="_blank" rel="noopener noreferrer" class="footer-contact-item">
+                        <span class="footer-contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-2.9-.4-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.5.6c-.2.2-.3.2-.6.1-1.6-.8-2.8-2.1-3.5-3.6-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5l.1-.4c0-.1-.5-1.3-.8-1.9-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2 1 2.5.1.2 1.8 2.8 4.4 3.8 2.6 1.1 2.6.7 3.1.6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1 .1-1.1-.1-.1-.3-.2-.5-.3Z"/>
+                            </svg>
+                        </span>
+                        <span>WhatsApp</span>
+                    </a>
+                    <span class="footer-contact-item">
+                        <span class="footer-contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M12 2a7 7 0 0 0-7 7c0 5.3 6 12 7 13 .9-1 7-7.7 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+                            </svg>
+                        </span>
+                        <span>Manaus, AM - Brasil</span>
+                    </span>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Redes</h4>
+                    <a href="https://github.com/iokimdiego" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+                        <span class="footer-contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.9.6-3.5-1.2-3.5-1.2-.4-1-1-1.3-1-1.3-.8-.6.1-.6.1-.6.9.1 1.4.9 1.4.9.8 1.4 2.2 1 2.7.8.1-.6.3-1 .6-1.3-2.3-.3-4.7-1.1-4.7-5a3.9 3.9 0 0 1 1-2.8c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.8 9.8 0 0 1 5 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.8c0 3.9-2.4 4.7-4.7 5 .3.2.7.8.7 1.7V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/>
+                            </svg>
+                        </span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/iokimdiego" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+                        <span class="footer-contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M5.3 3.5a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6ZM3.8 8.7H6.8V20.5H3.8V8.7Zm4.8 0h2.8v1.6h.1c.4-.8 1.4-1.8 3-1.8 3.2 0 3.8 2.1 3.8 4.9v7.1h-3v-6.3c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3v6.4h-3V8.7Z"/>
+                            </svg>
+                        </span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/iokimdiego" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+                        <span class="footer-contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.6 1.6a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"/>
+                            </svg>
+                        </span>
+                        <span>Instagram</span>
+                    </a>
                 </div>
             </div>
-        </nav>
-        <!-- Fim da Barra de Navegação - Telas Pequenas -->
-        <!-- Início da Barra de Navegação - Telas Grandes-->
-         <div class="container-fluid menu-normal d-flex align-items-center sticty-top d-none d-lg-block">
-            <div class="container pb-5">
-                <div class="row pb-5">
-                    <!--Início da Logomarca do site-->
-                    <div class="col-lg-1 col-12 text-lg-start text-center">
-                        <a href="/index.html">
-                            <img class="img-fluid" src="assets/img/logo-id-dev.png" alt="Logomarca do site">
-                        </a>
-                    </div>
-                    <!--Fim da Logomarca do site-->
-                    <!-- Início do Menu de Navegação-->
-                     <div class="col-8 d-flex justify-content-center align-items-center">
-                        <div>
-                            <nav class="navbar navbar-expand-lg nav-underline">
-                                <a href="#" class="nav-link active text-light-emphasis">Início</a>
-                                <a href="#sobre-mim" class="nav-link text-light-emphasis">Sobre mim</a>
-                                <a href="#habilidades" class="nav-link text-light-emphasis">Habilidades</a>
-                                <a href="#experiencias" class="nav-link text-light-emphasis">Experiência</a>
-                                <a href="#servicos" class="nav-link text-light-emphasis">Serviços</a>
-                                <a href="#projetos" class="nav-link text-light-emphasis">Projetos</a>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- Fim do Menu de Navegação-->
-                    <!-- Início do Link de e-mail -->
-                     <div class="link-email col-3 d-flex justify-content-start align-items-center text-center">
-                        <a class="nav-link text-light-emphasis" href="#projetos"><i class="fa-regular fa-envelope destaque-azul"></i><span class="ps-2">iokimdiego@hotmail.com</span></a>
-                    </div>
-                    <!-- Fim do Link de e-mail -->
-                    <div class="caixa-azul-banner d-none d-lg-block"></div> <!-- Retângulo azul -->
-                </div>
+
+            <div class="container footer-bottom">
+                <p>© 2026 Iokim Diego. Todos os direitos reservados.</p>
+                <a href="#hero" class="footer-top-link">Voltar ao topo</a>
             </div>
-         </div>
-        <!-- Fim da Barra de Navegação (Topo da Página)-->
-    </header>
-    <main>
-        <!-- Início da Seção Banner -->
-        <section class="banner container pt-0 pb-0 pe-0">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 box-titulo-principal pb-lg-5 mb-5">
-                        <span class="lead display-6">Olá, 👋</span>
-                        <h1 class="titulo-principal azul-escuro display-6 lead fw-bolder pt-2">Eu sou o Iokim Diego</h1>
-                        <h1 class="titulo-principal azul-escuro display-6 lead fw-bolder">um <span class="destaque-azul">Desenvolvedor Full Stack</span></h1>
-                        <p class="lead azul-escuro pt-4 pb-4">Oi, eu sou Iokim Diego, um desenvolvedor full stack de Manaus. Transformo ideias em soluções web completas, eficientes e de qualidade. Minha missão é unir design, funcionalidade e performance para entregar projetos eficientes e impactantes.</p>
-                        <div class="text-lg-start text-center">
-                            <a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-padrao ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button">
-                                <span class="pe-3">Vamos conversar</span><i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </div>
-                        <img src="assets/img/smiley-man-working-laptop-from-home-transparente.png" class="img-fluid d-lg-none" alt="Foto de um Web Developer">
-                    </div>
-                    <div class="foto-web-developer d-none d-lg-block col-lg-6 col-12 pb-0">
-                        <img src="assets/img/smiley-man-working-laptop-from-home-transparente.png" class="img-fluid" alt="Foto de um Web Developer">
-                        <div class="stack1"><img src="assets/img/icons/Visual_Studio_Code_1.35_icon.svg.png" alt="Logo Visual Studio" class="img-fluid"></div>
-                        <div class="stack2"><img src="assets/img/icons/Bootstrap_logo.svg" alt="Logo bootstrap" class="img-fluid"></div>
-                        <div class="stack3"><img src="assets/img/icons/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML 5" class="img-fluid"></div>
-                        <div class="stack4"><img src="assets/img/icons/Figma-logo.svg.png" alt="Logo Figma" class="img-fluid"></div>
-                        <div class="stack5"><img src="assets/img/icons/PHP-logo.svg.png" alt="Logo PHP" class="img-fluid"></div>
-                        <div class="stack6"><img src="assets/img/icons/github-brands.svg" alt="Logo GitHub" class="img-fluid"></div>
-                        <div class="stack7"><img src="assets/img/icons/smile.png" alt="Smile" class="img-fluid"></div>
-                        <div class="stack8"><img src="assets/img/icons/code-solid.svg" alt="Código" class="img-fluid"></div>
-                        <div class="stack9"><img src="assets/img/icons/mysql-4096.png" alt="Logo MySQL" class="img-fluid"></div>
-                        <div class="caixa-azul-banner d-none d-lg-block"></div> <!-- Retângulo azul -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fim da Seção Banner -->
-        <section class="stacks container pt-lg-5 pt-0 pb-lg-0 pb-5" id="sobre-mim">
-            <div class="container-fluid">
-                <div class="row pb-3">
-                    <h2 class="azul-escuro text-center pb-4">Minha stack de desenvolvimento <span class="destaque-azul">principal</span> e ferramentas</h2>
-                </div>
-                <div class="row">
-                    <div class="stacks-brands justify-content-center text-center align-items-center d-none d-lg-flex">
-                        <div class="col-2 d-flex align-items-center">
-                            <i class="fa-brands fa-php"></i><span> Linguagem Back-End</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="fa-brands fa-html5"></i><span> HTML e Front-End</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="fa-brands fa-css3-alt"></i><span> CSS e Bootstrap</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="fa-brands fa-square-js"></i><span> JavaScript</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="fa-brands fa-figma"></i><span> Design Responsivo e Prototipado</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="fa-brands fa-github"></i><span>Controle de versão</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-database"></i><span>Banco de Dados</span>
-                        </div>
-                    </div>
-                    <!-- Início da apresentação das Stacks em carousel automático do Bootstrap -->
-                    <div id="carouselStacks" class="carousel slide d-lg-none d-block" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active" data-bs-interval="2000">
-                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
-                                <i class="fa-brands fa-php"></i><span> Linguagem Back-End</span>
-                            </div>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
-                                <i class="fa-brands fa-html5"></i><span> HTML e Front-End</span>
-                            </div>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
-                                <i class="fa-brands fa-css3-alt"></i><span> CSS e Bootstrap</span>
-                            </div>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
-                                <i class="fa-brands fa-square-js"></i><span> JavaScript</span>
-                            </div>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
-                                <i class="fa-brands fa-figma"></i><span> Design Responsivo e Prototipado</span>
-                            </div>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
-                                <i class="fa-brands fa-github"></i><span>Controle de versão</span>
-                            </div>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <div class="d-flex align-items-center justify-content-center stacks-brands d-block w-100">
-                                <i class="fa-solid fa-database"></i><span>Banco de Dados</span>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselStacks" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselStacks" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    <!-- Fim do carousel -->
-                </div>
-            </div>
-        </section>
-        <!-- Fim da Seção Stacks -->
-        <section class="sobre-mim container pb-0">
-            <div class="continer-fluid">
-                <div class="row">
-                    <div class="foto-iokim col-12 col-lg-6">
-                        <div class="fundo-circulo-azul"></div>
-                        <div class="icon1"><i class="fa-solid fa-user-graduate"></i></div>
-                        <div class="icon2"><i class="fa-solid fa-briefcase"></i></div>
-                        <div class="icon3"></div>
-                        <div class="icon4"><i class="fa-solid fa-code"></i></div>
-                        <img class="img-fluid " src="assets/img/5.png" alt="Foto do Iokim">
-                    </div>
-                    <div class="texto-sobre-mim col-12 col-lg-6">
-                        <div class="container-fluid p-3">
-                            <div class="row">
-                                <h4 class="destaque-azul pb-0 mb-0">Sobre mim</h4>
-                                <p class="azul-escuro pb-4">@iokimdiego</p>
-                                <h2 class="azul-escuro pb-4">Desenvolvimento com propósito</h2>
-                                <p class="azul-escuro pb-4 pe-5">Com experiência no desenvolvimento front-end e back-end, estou sempre em busca de evolução: atualmente estudo JavaScript com profundidade e desenvolvo projetos pessoais para aplicar e expandir meus conhecimentos. Meu propósito é entregar resultados de qualidade, alinhados às necessidades de cada cliente ou negócio.</p>
-                                <div class="azul-escuro pb-5">
-                                    <div class="d-flex justify-content-between pb-2">
-                                        <div class="col-6">
-                                            <strong class="">Nome:</strong><span class=""> Iokim Diego</span>
-                                        </div>
-                                        <div class="col-6">
-                                            <strong class="">Local:</strong><span class=""> Manaus/Amazonas</span>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <strong>E-mail:</strong><span class=""> iokimdiego@hotmail.com</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row azul-escuro align-items-center justify-content-center text-center pe-lg-5 p-0 pb-4 mb-lg-4 mb-0">
-                                <div class="col-lg-5 col-12 text-center">
-                                    <a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-padrao ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a>
-                                </div>
-                                <div class="linha col-1 d-lg-flex d-none"></div>
-                                <div class="col-lg-6 d-flex justify-content-lg-between justify-content-between align-items-center pt-lg-0 pt-3">
-                                    <span class="azul-escuro">Conecte-se comigo!</span>
-                                    <div class="rede-social text-center">
-                                        <a href="https://www.linkedin.com/in/iokimdiego/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                                        <a href="https://github.com/iokimdiego" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fim da seção Sobre mim -->
-        <section class="skills d-flex justify-content-center" id="habilidades">
-            <div class="col-lg-10 p-5">
-                <div class="row">
-                    <div class="col-lg-6 pb-lg-5 pb-5 mb-lg-5">
-                        <h4 class="destaque-azul pt-3 pb-5">Habilidades</h4>
-                        <h2 class="azul-escuro pb-4">Habilidades criativas e profissionais em diversas áreas</h2>
-                        <p class="azul-escuro pb-4">Competências que vão além da programação. Habilidades em design, visão estratégica de negócios, organização de projetos e comunicação. Skills que me permitem atuar de forma estratégica e criativa no desenvolvimento de soluções eficientes e alinhadas aos objetivos de cada cliente.</p>
-                        <a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-padrao ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a>
-                    </div>
-                    <div class="col-lg-6 d-flex align-items-center">
-                        <div class="col-12">
-                            <!-- 1ª Skill -->
-                            <p class="fw-bolder pb-0 mb-0">Desenvolvimento Front-End (HTML, CSS, Bootstrap, Figma)</p>
-                            <div class="d-flex align-items-center">
-                                <div class="col-10 progress justify-content-between" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar fundo-azul" style="width: 85%"></div>
-                                </div>
-                                <span class="destaque-azul fw-bolder ps-3">85%</span>
-                            </div>
-                            <!-- 2ª Skill -->
-                            <p class="fw-bolder mt-2 mb-0">Desenvolvimento Back-End (PHP & MySQL)</p>
-                            <div class="d-flex align-items-center">
-                                <div class="col-10 progress justify-content-between" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar fundo-azul" style="width: 75%"></div>
-                                </div>
-                                <span class="destaque-azul fw-bolder ps-3">75%</span>
-                            </div>
-                            <!-- 3ª Skill -->
-                            <p class="fw-bolder mt-2 mb-0">JavaScript <small class="fw-normal destaque-azul">(em evolução)</small></p>
-                            <div class="d-flex align-items-center">
-                                <div class="col-10 progress justify-content-between" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar fundo-azul" style="width: 40%"></div>
-                                </div>
-                                <span class="destaque-azul fw-bolder ps-3">40%</span>
-                            </div>
-                            <!-- 4ª Skill -->
-                            <p class="fw-bolder mt-2 mb-0">Versionamento de Código (Git & GitHub)</p>
-                            <div class="d-flex align-items-center">
-                                <div class="col-10 progress justify-content-between" role="progressbar" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar fundo-azul" style="width: 70%"></div>
-                                </div>
-                                <span class="destaque-azul fw-bolder ps-3">70%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fim da Seção Skills -->
-        <section class="experiencias container" id="experiencias">
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center">
-                    <h4 class="destaque-azul pt-3 pb-5">Experiências</h4>
-                    <div class="col-lg-8">
-                        <h2 class="azul-escuro text-center pb-4">Experiência diversificada</h2>
-                        <p class="azul-escuro text-center pb-5">A vivência em diversos setores, como comércio, serviço público e gastronomia, entrega <strong>inovação</strong> com <strong>visão estratégica</strong>, foco na <strong>experiência do usuário</strong> e <strong>otimização dos processos</strong></p>
-                    </div>
-                </div>
-                <div class="row d-flex">
-                    <div class="col-lg-4 col-12">
-                        <div class="card">
-                            <img src="assets/img/portrait-successful-middle-aged-manager-businessman-holding-tablet-computer-large-warehouse-organizing-distribution.jpg" class="card-img-top img-fluid" alt="">
-                            <div class="card-body">
-                                <div class="legenda-setor mb-4">
-                                    <p class="">Comércio</p>
-                                </div>
-                                <h5 class="card-title">Analista administrativo</h5>
-                                <p class="card-text"></p>
-                                <i class="fa-regular fa-building"></i><small class="ps-2">Grupo Nova Era</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12 pt-lg-0 pt-3">
-                        <div class="card">
-                            <img src="assets/img/freepik__the-style-is-candid-image-photography-with-natural__87567.jpeg" class="card-img-top img-fluid" alt="">
-                            <div class="card-body">
-                                <div class="legenda-setor mb-4" style="width: 110px;">
-                                    <p class="">Serviço Público</p>
-                                </div>
-                                <h5 class="card-title">Assistente operacional</h5>
-                                <p class="card-text"></p>
-                                <i class="fa-regular fa-building"></i><small class="ps-2">Secretaria de Segurança Pública do Amazonas</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12 pt-lg-0 pt-3">
-                        <div class="card">
-                            <img src="assets/img/happy-professional-male-chef-looking-camera.jpg" class="card-img-top img-fluid" alt="">
-                            <div class="card-body">
-                                <div class="legenda-setor mb-4" style="width: 95px;">
-                                    <p class="">Gastronomia</p>
-                                </div>
-                                <h5 class="card-title">Cozinheiro & Barista</h5>
-                                <p class="card-text"></p>
-                                <i class="fa-regular fa-building"></i><small class="ps-2">Restaurante e Cafeteria do SENAC</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center pt-5 mt-5 mb-5"><a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-padrao ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a></div>
-            </div>
-        </section>
-        <!-- Fim da seção Experiência -->
-        <section class="servicos container-fluid" id="servicos">
-            <div class="container">
-                <div class="row">
-                    <h4 class="destaque-azul pb-5 mb-5">Serviços</h4>
-                    <h2 class="azul-escuro text-center pb-4 mb-4">Procura <strong class="destaque-azul">soluções digitais</strong> personalizadas para o seu negócio?</h2>
-                    <div class="col-lg-6 col-12">
-                        <div class="col-12">
-                            <!-- Serviço 1 -->
-                            <div class="servicos">
-                                <div class="card card-servico">
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <span class="azul-escuro fw-bolder">Criação de Sites Institucionais</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </div>
-                                </div>
-                                <p class="paragrafo">
-                                    Desenvolvimento de sites profissionais para empresas, profissionais autônomos e prestadores de serviço.
-                                </p>
-                            </div>
-                            <!-- Serviço 2 -->
-                            <div class="servicos">
-                                <div class="card card-servico">
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <span class="azul-escuro fw-bolder">Lojas Virtuais e Catálogos Online</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </div>
-                                </div>
-                                <p class="paragrafo">
-                                    Configuração e personalização de plataformas de e-commerce e catálogos virtuais.
-                                </p>
-                            </div>
-                            <!-- Serviço 3 -->
-                            <div class="servicos">
-                                <div class="card card-servico">
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <span class="azul-escuro fw-bolder">Sistemas de Gestão Simples</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </div>
-                                </div>
-                                <p class="paragrafo">
-                                    Desenvolvimento de sistemas internos para organização de clientes, pedidos, estoque e tarefas.
-                                </p>
-                            </div>
-                            <!-- Serviço 4 -->
-                            <div class="servicos">
-                                <div class="card card-servico">
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <span class="azul-escuro fw-bolder">Landing Pages para Captação de Leads</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </div>
-                                </div>
-                                <p class="paragrafo">
-                                    Criação de páginas de alta conversão para campanhas de marketing digital.
-                                </p>
-                            </div>
-                            <!-- Serviço 5 -->
-                            <div class="servicos">
-                                <div class="card card-servico">
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <span class="azul-escuro fw-bolder">Manutenção e Suporte Técnico</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </div>
-                                </div>
-                                <p class="paragrafo">
-                                    Atualização, correção de erros e suporte para sites e sistemas web.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="foto-programador col-lg-6 col-12 d-lg-block d-none">
-                        <img src="assets/img/pexels-fotios-photos-16129724.jpg" class="img-fluid" alt="Foto de um programador">
-                    </div>
-                </div>
-                <div class="text-center pt-5 pb-5 mb-5"><a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-padrao ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a></div>
-            </div>
-        </section>
-        <!-- Fim da seção Serviços -->
-        <section class="projeto" id="projetos">
-            <div class="d-flex justify-content-center fundo-azul p-lg-5 p-2">
-                <div class="card col-lg-8 col-12 shadow-sm p-4 mb-2 bg-gray d-flex justify-content-center">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="azul-escuro text-center mt-3 pt-md-5 pb-md-4">Você tem algum projeto em mente?</h2>
-                            <p class="azul-escuro text-center pb-md-4">Preencha o formulário abaixo ou, se preferir, converse comigo pelo WhatsApp. Estou pronto para te ajudar a criar uma solução sob medida para o seu negócio!</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <form action="">
-                                <fieldset>
-                                    <legend class="visually-hidden">Formulário de Contato</legend>
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" aria-describedby="nomeHelp" required>
-                                        <label for="nome">Seu nome</label>
-                                        <div id="nomeHelp" class="form-text ps-3 text-danger"></div>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" aria-describedby="emailHelp" required type="email">
-                                        <label for="email">Seu e-mail</label>
-                                        <div id="emailHelp" class="form-text"></div>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone" aria-describedby="telefoneHelp" pattern="^\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$">
-                                        <label for="telefone" class="form-label">Seu telefone</label>
-                                        <div id="telefoneHelp" class="form-text"></div>
-                                    </div>
-                                    <div class="form form-floating mb-3">
-                                        <textarea name="mensagem" id="mensagem" class="form-control" placeholder="Digite a sua mensagem" rows="5" required></textarea>
-                                        <label for="mensagem" class="form-label">Escreva a sua mensagem</label>
-                                    </div>
-                                    <div class="d-flex justify-content-lg-center justify-content-between pt-4 pb-5">
-                                        <button type="submit" class="btn btn-padrao me-lg-4 me-0"><i class="fa-regular fa-paper-plane "></i><span class="ms-2">Enviar mensagem</span></button>
-                                        <div class=""><a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="btn fundo-verde ps-3 pe-3" role="button" target="_blank" rel="noopener no-referrer" data-bs-toggle="button"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</a></div>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fim da Seção Projetos: Formulário de Contato -->
-    </main>
-    <footer class="p-0 m-0">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-12 logo-rodape text-lg-start text-center">
-                    <img src="assets/img/logo-id-dev.png" class="img-fluid logo-id-dev" alt="Logo ID Dev">
-                    <p class="azul-escuro d-none d-lg-block">Desenvolvendo soluções digitais personalizadas para o seu negócio.</p>
-                    <div class="rede-social mb-lg-0 mb-4">
-                        <a href="https://www.linkedin.com/in/iokimdiego/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin azul-escuro"></i></a>
-                        <a href="https://github.com/iokimdiego" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github azul-escuro"></i></a>
-                    </div>
-                </div>
-                <!-- Menu Nav para dispositivos mobiles -->
-                
-                <!-- Fim do Menu Nav para dispositivos mobiles -->
-                <!-- Menu Nav do Rodapé (telas grandes) -->
-                <div class="col-lg-7 col-12 d-lg-flex d-block justify-content-between pt-lg-4 pb-lg-5">
-                    <!-- 1ª Coluna: Sobre -->
-                    <div class="col-lg-3 col-12 text-lg-start text-center mb-lg-0 mb-4">
-                        <ul class="nav flex-column">
-                            <h5 class="azul-escuro">Sobre</h5>
-                            <li class="nav-item"><a href="#sobre-mim" class="nav-link azul-escuro ps-lg-0">Stacks</a></li>
-                            <li class="nav-item"></li><a href="#" class="nav-link azul-escuro ps-lg-0">Perfil</a></li>
-                            <li class="nav-item"></li><a href="#experiencias" class="nav-link azul-escuro ps-lg-0">Experiência</a></li>
-                            <li class="nav-item"></li><a href="#servicos" class="nav-link azul-escuro ps-lg-0">Serviços</a></li>
-                        </ul>
-                    </div>
-                    <!-- 2ª Coluna: Habilidades -->
-                    <div class="d-none d-lg-flex col-lg-3 col-12 text-lg-start text-center">
-                        <ul class="nav flex-column">
-                            <h5 class="azul-escuro">Habilidades</h5>
-                            <li class="nav-item"><a href="#habilidades" class="nav-link azul-escuro ps-0">Técnicas</a></li>
-                            <li class="nav-item"><a href="#habilidades" class="nav-link azul-escuro ps-0">Comportamentais</a></li>
-                        </ul>
-                    </div>
-                    <!-- 3ª Coluna: Projetos -->
-                    <div class="d-none d-lg-block">
-                        <ul class="nav flex-column">
-                            <h5 class="azul-escuro">Projetos</h5>
-                            <li class="nav-item"><a href="#" class="nav-link azul-escuro ps-0">Projeto 1</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link azul-escuro ps-0">Projeto 2</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link azul-escuro ps-0">Projeto 3</a></li>
-                        </ul>
-                    </div>
-                    <!-- 4ª Coluna: Contato -->
-                    <div class="text-lg-start text-center mb-lg-0 mb-4">
-                        <ul class="nav flex-column">
-                            <h5 class="azul-escuro">Contato</h5>
-                            <li class="nav-item"><a href="https://wa.me/5592981940300/?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%2Fideia%20para%20o%20meu%20neg%C3%B3cio." class="nav-link azul-escuro ps-lg-0" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp me-2"></i>+55 (92) 98194-0300</a></li>
-                            <li class="nav-item"><a href="#projetos" class="nav-link azul-escuro ps-lg-0"><i class="fa-regular fa-envelope me-2"></i>iokimdiego@hotmail.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 copyright-bar pb-0 mb-0">
-            <p>&copy; 2025 Iokim Diego. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-    <!-- Área de Adição do Javascript -->
-     <script src="assets/js/1.index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js"></script>
-</body>
+        </footer>
+        <script src="src/js/main.js" defer></script>
+    </body>
 </html>
+
+
+
+
+
+
+
+

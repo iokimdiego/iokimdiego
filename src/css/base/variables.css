@@ -1,0 +1,14 @@
+:root {
+  /* --bg-primary: #1f1f1f; */
+  --bg-primary: #020617;
+  --bg-secondary: #0f172a;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+
+  /* --accent-primary: #b9aaee; */
+  --accent-primary: #8b5cf6;
+  --accent-secondary: #06b6d4;
+
+  --gradient: linear-gradient(90deg, #512bd4, #06b6d4);
+}
