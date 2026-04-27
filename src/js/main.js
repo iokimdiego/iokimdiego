@@ -1,3 +1,13 @@
+function sanitize(str) {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
 const projects = [
     {
         category: "Frontend / Landing Pages",
@@ -35,7 +45,7 @@ function createProjectFilterButton(category) {
 
 function createProjectCard(project) {
     const techList = project.techs
-        .map((tech) => `<li class="project-tech-chip">${tech}</li>`)
+        .map((tech) => `<li class="project-tech-chip">${sanitize(tech)}</li>`)
         .join('');
 
     return `
@@ -43,11 +53,11 @@ function createProjectCard(project) {
             ${project.status === "in-progress" ? `
                 <span class="project-status-badge" aria-label="Projeto em desenvolvimento">Em desenvolvimento</span>
             ` : ''}
-            <img src="${project.image}" alt="Miniatura do projeto ${project.title}" class="project-thumbnail">
-            <span class="project-category">${project.category}</span>
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <ul class="project-tech-list" aria-label="Tecnologias do projeto ${project.title}">${techList}</ul>
+            <img src="${project.image}" alt="Miniatura do projeto ${sanitize(project.title)}" class="project-thumbnail">
+            <span class="project-category">${sanitize(project.category)}</span>
+            <h3>${sanitize(project.title)}</h3>
+            <p>${sanitize(project.description)}</p>
+            <ul class="project-tech-list" aria-label="Tecnologias do projeto ${sanitize(project.title)}">${techList}</ul>
             <div class="project-actions">
                 <a href="${project.detailsUrl}" class="project-btn project-btn-outline">Ver mais</a>
                 ${
@@ -158,6 +168,16 @@ function setupContactForm() {
         if (!name || !email || !subject || !message) {
             if (status) {
                 status.textContent = 'Preencha todos os campos antes de enviar.';
+                status.classList.remove('is-success');
+                status.classList.add('is-error');
+            }
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            if (status) {
+                status.textContent = 'Informe um e-mail válido antes de enviar.';
                 status.classList.remove('is-success');
                 status.classList.add('is-error');
             }

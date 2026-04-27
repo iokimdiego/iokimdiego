@@ -22,10 +22,10 @@ function renderProjectDetail() {
         return;
     }
 
-    const techs = project.techs.map((tech) => `<li>${tech}</li>`).join('');
-    const architecture = (project.architecture || []).map((item) => `<li>${item}</li>`).join('');
-    const decisions = (project.decisions || []).map((item) => `<li>${item}</li>`).join('');
-    const tradeOffs = (project.tradeOffs || []).map((item) => `<li>${item}</li>`).join('');
+    const techs = project.techs.map((tech) => `<li>${sanitize(tech)}</li>`).join('');
+    const architecture = (project.architecture || []).map((item) => `<li>${sanitize(item)}</li>`).join('');
+    const decisions = (project.decisions || []).map((item) => `<li>${sanitize(item)}</li>`).join('');
+    const tradeOffs = (project.tradeOffs || []).map((item) => `<li>${sanitize(item)}</li>`).join('');
 
     const renderSection = (title, content, modifier = '') => `
         <section class="project-detail-block ${modifier}">
@@ -37,18 +37,18 @@ function renderProjectDetail() {
     host.innerHTML = `
         <article class="project-detail-card">
             <div class="project-detail-media">
-                <img src="${project.image}" alt="Screenshot do projeto ${project.title} — ${project.shortDescription}">
+                <img src="${project.image}" alt="Screenshot do projeto ${sanitize(project.title)} — ${sanitize(project.shortDescription)}">
             </div>
             <div class="project-detail-content">
                 <p class="project-detail-eyebrow">Detalhamento técnico</p>
-                <p class="project-detail-category">${project.category}</p>
-                <h2>${project.title}</h2>
+                <p class="project-detail-category">${sanitize(project.category)}</p>
+                <h2>${sanitize(project.title)}</h2>
                 ${project.status === "in-progress" ? `<span class="catalog-badge-wip" aria-label="Projeto em desenvolvimento">🚧 Em desenvolvimento ativo</span>` : ''}
-                <p class="project-detail-lead">${project.shortDescription}</p>
+                <p class="project-detail-lead">${sanitize(project.shortDescription)}</p>
 
-                ${renderSection('Descrição do projeto', `<p>${project.longDescription}</p>`, 'is-description')}
-                ${renderSection('Problema', `<p>${project.problem}</p>`)}
-                ${renderSection('Solução', `<p>${project.solution}</p>`)}
+                ${renderSection('Descrição do projeto', `<p>${sanitize(project.longDescription)}</p>`, 'is-description')}
+                ${renderSection('Problema', `<p>${sanitize(project.problem)}</p>`)}
+                ${renderSection('Solução', `<p>${sanitize(project.solution)}</p>`)}
                 ${renderSection('Arquitetura', `<ul class="project-detail-list">${architecture}</ul>`)}
                 ${renderSection('Stack', `<ul class="catalog-techs">${techs}</ul>`, 'is-stack')}
                 ${renderSection('Decisões', `<ul class="project-detail-list">${decisions}</ul>`)}

@@ -21,14 +21,6 @@ h2 {
     color: var(--accent-primary);
 }
 
-a {
-    cursor: pointer;
-}
-    a:hover {
-    opacity: 0.9;
-    }
-
-
 section {
     padding: 60px 20px;
 }

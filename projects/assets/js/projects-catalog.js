@@ -1,16 +1,16 @@
 function createCatalogCard(project) {
-    const techs = project.techs.map((tech) => `<li>${tech}</li>`).join('');
+    const techs = project.techs.map((tech) => `<li>${sanitize(tech)}</li>`).join('');
     const detailsUrl = `projetos.html?id=${encodeURIComponent(project.id)}`;
 
     return `
         <article class="catalog-card">
             ${project.status === "in-progress" ? `<span class="catalog-badge-wip" aria-label="Projeto em desenvolvimento">Em desenvolvimento</span>` : ''}
-            <a href="${detailsUrl}" class="catalog-card-link" aria-label="Abrir detalhes de ${project.title}">
-                <img src="${project.image}" alt="Screenshot do projeto ${project.title} — ${project.shortDescription}" class="catalog-thumb">
+            <a href="${detailsUrl}" class="catalog-card-link" aria-label="Abrir detalhes de ${sanitize(project.title)}">
+                <img src="${project.image}" alt="Screenshot do projeto ${sanitize(project.title)} — ${sanitize(project.shortDescription)}" class="catalog-thumb">
             </a>
             <div class="catalog-card-body">
-                <h3>${project.title}</h3>
-                <p>${project.shortDescription}</p>
+                <h3>${sanitize(project.title)}</h3>
+                <p>${sanitize(project.shortDescription)}</p>
                 <ul class="catalog-techs">${techs}</ul>
                 <div class="catalog-actions">
                     <a href="${detailsUrl}" class="catalog-btn catalog-btn-outline">Ver detalhes</a>

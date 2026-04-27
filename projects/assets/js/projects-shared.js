@@ -1,3 +1,13 @@
+function sanitize(str) {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
 function setupSharedHeader() {
     const nav = document.querySelector('.main-nav');
     const toggle = document.querySelector('.nav-toggle');
