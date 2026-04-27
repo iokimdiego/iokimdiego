@@ -29,7 +29,7 @@ window.PROJECTS_CATALOG = [
         ],
         techs: ["HTML", "CSS", "JavaScript", "SEO"],
         image: "../public/images/placeholder-gerlenmascarenhas.png",
-        repoUrl: "https://github.com/iokimdiego",
+        repoUrl: "https://github.com/iokimdiego/gerlen-mascarenhas-site",
         liveUrl: "https://www.gerlenmascarenhas.com.br"
     },
     {
