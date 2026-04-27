@@ -1,43 +1,27 @@
 const projects = [
     {
         category: "Frontend / Landing Pages",
-        title: "Dra. Gerlen Mascarenhas",
-        description: "Landing page profissional para captação de clientes.",
+        title: "Landing Page - Gerlen Mascarenhas",
+        description: "Landing page profissional para captação de clientes, com foco em conversão e SEO.",
         liveUrl: "https://www.gerlenmascarenhas.com.br",
-        detailsUrl: "projects/index.html",
+        detailsUrl: "projects/projetos.html?id=landing-gerlen",
         techs: ["HTML", "CSS", "JavaScript", "SEO"],
-        image: "public/images/placeholder-gerlenmascarenhas.png"
+        image: "public/images/placeholder-gerlenmascarenhas.png",
+        status: "live"
     },
     {
         category: "Backend / .NET APIs",
-        title: "API de Gestão",
-        description: "API REST em C# .NET para operações de cadastro, autenticação e relatórios.",
+        title: "ERPSchoolAPI",
+        description: "API REST em desenvolvimento para gestão escolar com ASP.NET Core e Entity Framework Core.",
         liveUrl: null,
-        detailsUrl: "projects/index.html",
-        techs: ["C#", "ASP.NET Core", "Entity Framework", "SQL Server"],
-        image: "public/images/placeholder-api-gestao.png"
-    },
-    {
-        category: "Fullstack Projects",
-        title: "Dashboard Analytics",
-        description: "Painel web para visualização de métricas e monitoramento de indicadores.",
-        liveUrl: null,
-        detailsUrl: "projects/index.html",
-        techs: [".NET", "REST APIs", "Charting", "SQL"],
-        image: "public/images/placeholder-dashboard-analytics.png"
-    },
-    {
-        category: "Backend / .NET APIs",
-        title: "Arquitetura Cloud para APIs",
-        description: "Estudo aplicado de deploy e observabilidade para APIs .NET em ambiente cloud.",
-        liveUrl: null,
-        detailsUrl: "projects/index.html",
-        techs: ["Azure", "Docker", ".NET", "CI/CD"],
-        image: "public/images/placeholder-dashboard-analytics.png"
+        detailsUrl: "projects/projetos.html?id=erp-school-api",
+        techs: ["C#", "ASP.NET Core", "Entity Framework Core", "SQL Server"],
+        image: "public/images/placeholder-api-gestao.png",
+        status: "in-progress"
     }
 ];
 
-const projectCategories = ["Todos", "Backend / .NET APIs", "Fullstack Projects", "Frontend / Landing Pages"];
+const projectCategories = ["Todos", "Backend / .NET APIs", "Frontend / Landing Pages"];
 let activeProjectCategory = "Todos";
 
 function createProjectFilterButton(category) {
@@ -56,6 +40,9 @@ function createProjectCard(project) {
 
     return `
         <div class="project-card">
+            ${project.status === "in-progress" ? `
+                <span class="project-status-badge" aria-label="Projeto em desenvolvimento">Em desenvolvimento</span>
+            ` : ''}
             <img src="${project.image}" alt="Miniatura do projeto ${project.title}" class="project-thumbnail">
             <span class="project-category">${project.category}</span>
             <h3>${project.title}</h3>

@@ -43,6 +43,7 @@ function renderProjectDetail() {
                 <p class="project-detail-eyebrow">Detalhamento técnico</p>
                 <p class="project-detail-category">${project.category}</p>
                 <h2>${project.title}</h2>
+                ${project.status === "in-progress" ? `<span class="catalog-badge-wip" aria-label="Projeto em desenvolvimento">🚧 Em desenvolvimento ativo</span>` : ''}
                 <p class="project-detail-lead">${project.shortDescription}</p>
 
                 ${renderSection('Descrição do projeto', `<p>${project.longDescription}</p>`, 'is-description')}

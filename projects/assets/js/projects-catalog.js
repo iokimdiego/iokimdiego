@@ -4,6 +4,7 @@ function createCatalogCard(project) {
 
     return `
         <article class="catalog-card">
+            ${project.status === "in-progress" ? `<span class="catalog-badge-wip" aria-label="Projeto em desenvolvimento">Em desenvolvimento</span>` : ''}
             <a href="${detailsUrl}" class="catalog-card-link" aria-label="Abrir detalhes de ${project.title}">
                 <img src="${project.image}" alt="Screenshot do projeto ${project.title} — ${project.shortDescription}" class="catalog-thumb">
             </a>
