@@ -5,7 +5,7 @@ function createCatalogCard(project) {
     return `
         <article class="catalog-card">
             <a href="${detailsUrl}" class="catalog-card-link" aria-label="Abrir detalhes de ${project.title}">
-                <img src="${project.image}" alt="Imagem do projeto ${project.title}" class="catalog-thumb">
+                <img src="${project.image}" alt="Screenshot do projeto ${project.title} — ${project.shortDescription}" class="catalog-thumb">
             </a>
             <div class="catalog-card-body">
                 <h3>${project.title}</h3>

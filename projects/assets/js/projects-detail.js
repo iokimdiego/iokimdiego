@@ -37,7 +37,7 @@ function renderProjectDetail() {
     host.innerHTML = `
         <article class="project-detail-card">
             <div class="project-detail-media">
-                <img src="${project.image}" alt="Imagem do projeto ${project.title}">
+                <img src="${project.image}" alt="Screenshot do projeto ${project.title} — ${project.shortDescription}">
             </div>
             <div class="project-detail-content">
                 <p class="project-detail-eyebrow">Detalhamento técnico</p>
