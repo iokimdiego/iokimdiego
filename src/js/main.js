@@ -18,7 +18,7 @@ const projects = [
         image: "public/images/placeholder-api-gestao.png"
     },
     {
-        category: "Fullsctack Projects",
+        category: "Fullstack Projects",
         title: "Dashboard Analytics",
         description: "Painel web para visualização de métricas e monitoramento de indicadores.",
         liveUrl: null,
@@ -37,7 +37,7 @@ const projects = [
     }
 ];
 
-const projectCategories = ["Todos", "Backend / .NET APIs", "Fullsctack Projects", "Frontend / Landing Pages"];
+const projectCategories = ["Todos", "Backend / .NET APIs", "Fullstack Projects", "Frontend / Landing Pages"];
 let activeProjectCategory = "Todos";
 
 function createProjectFilterButton(category) {

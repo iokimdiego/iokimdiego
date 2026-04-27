@@ -67,7 +67,7 @@ window.PROJECTS_CATALOG = [
     },
     {
         id: "dashboard-analytics",
-        category: "Fullsctack Projects",
+        category: "Fullstack Projects",
         title: "Dashboard Analytics",
         shortDescription: "Painel web para visualização de métricas e monitoramento de indicadores.",
         longDescription: "Aplicação fullstack voltada para visualização de dados operacionais. O backend organiza as fontes de dados e o frontend apresenta indicadores com foco em leitura rápida para tomada de decisão.",
@@ -135,6 +135,6 @@ window.PROJECTS_CATALOG = [
 
 window.PROJECT_CATEGORIES = [
     "Backend / .NET APIs",
-    "Fullsctack Projects",
+    "Fullstack Projects",
     "Frontend / Landing Pages"
 ];
